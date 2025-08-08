@@ -1,0 +1,12 @@
+# bad-capabilities-pod.yaml
+apiVersion: v1
+kind: Pod
+metadata:
+  name: dangerous-pod
+spec:
+  containers:
+  - name: hacker
+    image: alpine
+    securityContext:
+      capabilities:
+        add: ["NET_RAW"]  # Capacité réseau dangereuse → Doit être bloqué

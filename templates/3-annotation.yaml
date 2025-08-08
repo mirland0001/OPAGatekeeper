@@ -1,0 +1,17 @@
+apiVersion: templates.gatekeeper.sh/v1beta1
+kind: ConstraintTemplate
+metadata:
+  name: k8srequiredserviceannotations
+spec:
+  crd:
+    spec:
+      names:
+        kind: K8sRequiredServiceAnnotations
+  targets:
+    - target: admission.k8s.gatekeeper.sh
+      rego: |
+        package k8srequiredserviceannotations
+        violation[{"msg": msg}] {
+          not input.review.object.metadata.annotations["security.kubernetes.io/enforce-tls"]
+          msg := "L'annotation 'security.kubernetes.io/enforce-tls' est obligatoire"
+        }

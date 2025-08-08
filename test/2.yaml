@@ -1,0 +1,12 @@
+# bad-root-pod.yaml
+apiVersion: v1
+kind: Pod
+metadata:
+  name: root-runner
+spec:
+  containers:
+  - name: alpine
+    image: alpine
+    command: ["sleep", "infinity"]
+    securityContext:
+      runAsUser: 0  # Explicitement root → Doit être bloqué

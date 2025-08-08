@@ -1,0 +1,8 @@
+# bad-secret-2.yaml
+apiVersion: v1
+kind: Secret
+metadata:
+  name: no-annotations-secret  # Pas d'annotations → Doit être bloqué
+type: Opaque
+data:
+  api-key: ZXhhbXBsZQo=

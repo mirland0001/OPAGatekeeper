@@ -1,0 +1,3492 @@
+{
+  "apiVersion": "constraints.gatekeeper.sh/v1beta1",
+  "kind": "K8sBlockHostPath",
+  "metadata": {
+    "annotations": {
+      "kubectl.kubernetes.io/last-applied-configuration": "{\"apiVersion\":\"constraints.gatekeeper.sh/v1beta1\",\"kind\":\"K8sBlockHostPath\",\"metadata\":{\"annotations\":{},\"name\":\"no-hostpath-volumes\"},\"spec\":{\"match\":{\"kinds\":[{\"apiGroups\":[\"\"],\"kinds\":[\"Pod\"]}]}}}\n"
+    },
+    "creationTimestamp": "2025-08-08T13:00:44Z",
+    "generation": 1,
+    "name": "no-hostpath-volumes",
+    "resourceVersion": "5098",
+    "uid": "de07c58d-429e-4180-893e-0b14e12bcd47"
+  },
+  "spec": {
+    "enforcementAction": "deny",
+    "match": {
+      "kinds": [
+        {
+          "apiGroups": [
+            ""
+          ],
+          "kinds": [
+            "Pod"
+          ]
+        }
+      ]
+    }
+  },
+  "status": {
+    "auditTimestamp": "2025-08-08T13:19:24Z",
+    "byPod": [
+      {
+        "constraintUID": "de07c58d-429e-4180-893e-0b14e12bcd47",
+        "enforced": true,
+        "enforcementPointsStatus": [
+          {
+            "enforcementPoint": "vap.k8s.io",
+            "message": "K8sNativeValidation engine is missing",
+            "observedGeneration": 1,
+            "state": "error"
+          }
+        ],
+        "id": "gatekeeper-audit-65fffcf58b-4nj9t",
+        "observedGeneration": 1,
+        "operations": [
+          "audit",
+          "generate",
+          "mutation-status",
+          "status"
+        ]
+      },
+      {
+        "constraintUID": "de07c58d-429e-4180-893e-0b14e12bcd47",
+        "enforced": true,
+        "id": "gatekeeper-controller-manager-b9d676cd7-f87h7",
+        "observedGeneration": 1,
+        "operations": [
+          "mutation-webhook",
+          "webhook"
+        ]
+      },
+      {
+        "constraintUID": "de07c58d-429e-4180-893e-0b14e12bcd47",
+        "enforced": true,
+        "id": "gatekeeper-controller-manager-b9d676cd7-l2v7q",
+        "observedGeneration": 1,
+        "operations": [
+          "mutation-webhook",
+          "webhook"
+        ]
+      },
+      {
+        "constraintUID": "de07c58d-429e-4180-893e-0b14e12bcd47",
+        "enforced": true,
+        "id": "gatekeeper-controller-manager-b9d676cd7-mrc4b",
+        "observedGeneration": 1,
+        "operations": [
+          "mutation-webhook",
+          "webhook"
+        ]
+      }
+    ],
+    "totalViolations": 6,
+    "violations": [
+      {
+        "enforcementAction": "deny",
+        "group": "",
+        "kind": "Pod",
+        "message": "Les volumes hostPath sont interdits",
+        "name": "storage-provisioner",
+        "namespace": "kube-system",
+        "version": "v1"
+      },
+      {
+        "enforcementAction": "deny",
+        "group": "",
+        "kind": "Pod",
+        "message": "Les volumes hostPath sont interdits",
+        "name": "kube-scheduler-minikube",
+        "namespace": "kube-system",
+        "version": "v1"
+      },
+      {
+        "enforcementAction": "deny",
+        "group": "",
+        "kind": "Pod",
+        "message": "Les volumes hostPath sont interdits",
+        "name": "kube-proxy-s46wr",
+        "namespace": "kube-system",
+        "version": "v1"
+      },
+      {
+        "enforcementAction": "deny",
+        "group": "",
+        "kind": "Pod",
+        "message": "Les volumes hostPath sont interdits",
+        "name": "kube-controller-manager-minikube",
+        "namespace": "kube-system",
+        "version": "v1"
+      },
+      {
+        "enforcementAction": "deny",
+        "group": "",
+        "kind": "Pod",
+        "message": "Les volumes hostPath sont interdits",
+        "name": "kube-apiserver-minikube",
+        "namespace": "kube-system",
+        "version": "v1"
+      },
+      {
+        "enforcementAction": "deny",
+        "group": "",
+        "kind": "Pod",
+        "message": "Les volumes hostPath sont interdits",
+        "name": "etcd-minikube",
+        "namespace": "kube-system",
+        "version": "v1"
+      }
+    ]
+  }
+}
+{
+  "apiVersion": "constraints.gatekeeper.sh/v1beta1",
+  "kind": "K8sBlockHostPath",
+  "metadata": {
+    "annotations": {
+      "kubectl.kubernetes.io/last-applied-configuration": "{\"apiVersion\":\"constraints.gatekeeper.sh/v1beta1\",\"kind\":\"K8sBlockHostPath\",\"metadata\":{\"annotations\":{},\"name\":\"no-hostpath-volumes\"},\"spec\":{\"match\":{\"kinds\":[{\"apiGroups\":[\"\"],\"kinds\":[\"Pod\"]}]}}}\n"
+    },
+    "creationTimestamp": "2025-08-08T13:00:44Z",
+    "generation": 1,
+    "name": "no-hostpath-volumes",
+    "resourceVersion": "5098",
+    "uid": "de07c58d-429e-4180-893e-0b14e12bcd47"
+  },
+  "spec": {
+    "enforcementAction": "deny",
+    "match": {
+      "kinds": [
+        {
+          "apiGroups": [
+            ""
+          ],
+          "kinds": [
+            "Pod"
+          ]
+        }
+      ]
+    }
+  },
+  "status": {
+    "auditTimestamp": "2025-08-08T13:19:24Z",
+    "byPod": [
+      {
+        "constraintUID": "de07c58d-429e-4180-893e-0b14e12bcd47",
+        "enforced": true,
+        "enforcementPointsStatus": [
+          {
+            "enforcementPoint": "vap.k8s.io",
+            "message": "K8sNativeValidation engine is missing",
+            "observedGeneration": 1,
+            "state": "error"
+          }
+        ],
+        "id": "gatekeeper-audit-65fffcf58b-4nj9t",
+        "observedGeneration": 1,
+        "operations": [
+          "audit",
+          "generate",
+          "mutation-status",
+          "status"
+        ]
+      },
+      {
+        "constraintUID": "de07c58d-429e-4180-893e-0b14e12bcd47",
+        "enforced": true,
+        "id": "gatekeeper-controller-manager-b9d676cd7-f87h7",
+        "observedGeneration": 1,
+        "operations": [
+          "mutation-webhook",
+          "webhook"
+        ]
+      },
+      {
+        "constraintUID": "de07c58d-429e-4180-893e-0b14e12bcd47",
+        "enforced": true,
+        "id": "gatekeeper-controller-manager-b9d676cd7-l2v7q",
+        "observedGeneration": 1,
+        "operations": [
+          "mutation-webhook",
+          "webhook"
+        ]
+      },
+      {
+        "constraintUID": "de07c58d-429e-4180-893e-0b14e12bcd47",
+        "enforced": true,
+        "id": "gatekeeper-controller-manager-b9d676cd7-mrc4b",
+        "observedGeneration": 1,
+        "operations": [
+          "mutation-webhook",
+          "webhook"
+        ]
+      }
+    ],
+    "totalViolations": 6,
+    "violations": [
+      {
+        "enforcementAction": "deny",
+        "group": "",
+        "kind": "Pod",
+        "message": "Les volumes hostPath sont interdits",
+        "name": "storage-provisioner",
+        "namespace": "kube-system",
+        "version": "v1"
+      },
+      {
+        "enforcementAction": "deny",
+        "group": "",
+        "kind": "Pod",
+        "message": "Les volumes hostPath sont interdits",
+        "name": "kube-scheduler-minikube",
+        "namespace": "kube-system",
+        "version": "v1"
+      },
+      {
+        "enforcementAction": "deny",
+        "group": "",
+        "kind": "Pod",
+        "message": "Les volumes hostPath sont interdits",
+        "name": "kube-proxy-s46wr",
+        "namespace": "kube-system",
+        "version": "v1"
+      },
+      {
+        "enforcementAction": "deny",
+        "group": "",
+        "kind": "Pod",
+        "message": "Les volumes hostPath sont interdits",
+        "name": "kube-controller-manager-minikube",
+        "namespace": "kube-system",
+        "version": "v1"
+      },
+      {
+        "enforcementAction": "deny",
+        "group": "",
+        "kind": "Pod",
+        "message": "Les volumes hostPath sont interdits",
+        "name": "kube-apiserver-minikube",
+        "namespace": "kube-system",
+        "version": "v1"
+      },
+      {
+        "enforcementAction": "deny",
+        "group": "",
+        "kind": "Pod",
+        "message": "Les volumes hostPath sont interdits",
+        "name": "etcd-minikube",
+        "namespace": "kube-system",
+        "version": "v1"
+      }
+    ]
+  }
+}
+{
+  "apiVersion": "constraints.gatekeeper.sh/v1beta1",
+  "kind": "K8sBlockHostPath",
+  "metadata": {
+    "annotations": {
+      "kubectl.kubernetes.io/last-applied-configuration": "{\"apiVersion\":\"constraints.gatekeeper.sh/v1beta1\",\"kind\":\"K8sBlockHostPath\",\"metadata\":{\"annotations\":{},\"name\":\"no-hostpath-volumes\"},\"spec\":{\"match\":{\"kinds\":[{\"apiGroups\":[\"\"],\"kinds\":[\"Pod\"]}]}}}\n"
+    },
+    "creationTimestamp": "2025-08-08T13:00:44Z",
+    "generation": 1,
+    "name": "no-hostpath-volumes",
+    "resourceVersion": "5098",
+    "uid": "de07c58d-429e-4180-893e-0b14e12bcd47"
+  },
+  "spec": {
+    "enforcementAction": "deny",
+    "match": {
+      "kinds": [
+        {
+          "apiGroups": [
+            ""
+          ],
+          "kinds": [
+            "Pod"
+          ]
+        }
+      ]
+    }
+  },
+  "status": {
+    "auditTimestamp": "2025-08-08T13:19:24Z",
+    "byPod": [
+      {
+        "constraintUID": "de07c58d-429e-4180-893e-0b14e12bcd47",
+        "enforced": true,
+        "enforcementPointsStatus": [
+          {
+            "enforcementPoint": "vap.k8s.io",
+            "message": "K8sNativeValidation engine is missing",
+            "observedGeneration": 1,
+            "state": "error"
+          }
+        ],
+        "id": "gatekeeper-audit-65fffcf58b-4nj9t",
+        "observedGeneration": 1,
+        "operations": [
+          "audit",
+          "generate",
+          "mutation-status",
+          "status"
+        ]
+      },
+      {
+        "constraintUID": "de07c58d-429e-4180-893e-0b14e12bcd47",
+        "enforced": true,
+        "id": "gatekeeper-controller-manager-b9d676cd7-f87h7",
+        "observedGeneration": 1,
+        "operations": [
+          "mutation-webhook",
+          "webhook"
+        ]
+      },
+      {
+        "constraintUID": "de07c58d-429e-4180-893e-0b14e12bcd47",
+        "enforced": true,
+        "id": "gatekeeper-controller-manager-b9d676cd7-l2v7q",
+        "observedGeneration": 1,
+        "operations": [
+          "mutation-webhook",
+          "webhook"
+        ]
+      },
+      {
+        "constraintUID": "de07c58d-429e-4180-893e-0b14e12bcd47",
+        "enforced": true,
+        "id": "gatekeeper-controller-manager-b9d676cd7-mrc4b",
+        "observedGeneration": 1,
+        "operations": [
+          "mutation-webhook",
+          "webhook"
+        ]
+      }
+    ],
+    "totalViolations": 6,
+    "violations": [
+      {
+        "enforcementAction": "deny",
+        "group": "",
+        "kind": "Pod",
+        "message": "Les volumes hostPath sont interdits",
+        "name": "storage-provisioner",
+        "namespace": "kube-system",
+        "version": "v1"
+      },
+      {
+        "enforcementAction": "deny",
+        "group": "",
+        "kind": "Pod",
+        "message": "Les volumes hostPath sont interdits",
+        "name": "kube-scheduler-minikube",
+        "namespace": "kube-system",
+        "version": "v1"
+      },
+      {
+        "enforcementAction": "deny",
+        "group": "",
+        "kind": "Pod",
+        "message": "Les volumes hostPath sont interdits",
+        "name": "kube-proxy-s46wr",
+        "namespace": "kube-system",
+        "version": "v1"
+      },
+      {
+        "enforcementAction": "deny",
+        "group": "",
+        "kind": "Pod",
+        "message": "Les volumes hostPath sont interdits",
+        "name": "kube-controller-manager-minikube",
+        "namespace": "kube-system",
+        "version": "v1"
+      },
+      {
+        "enforcementAction": "deny",
+        "group": "",
+        "kind": "Pod",
+        "message": "Les volumes hostPath sont interdits",
+        "name": "kube-apiserver-minikube",
+        "namespace": "kube-system",
+        "version": "v1"
+      },
+      {
+        "enforcementAction": "deny",
+        "group": "",
+        "kind": "Pod",
+        "message": "Les volumes hostPath sont interdits",
+        "name": "etcd-minikube",
+        "namespace": "kube-system",
+        "version": "v1"
+      }
+    ]
+  }
+}
+{
+  "apiVersion": "constraints.gatekeeper.sh/v1beta1",
+  "kind": "K8sBlockHostPath",
+  "metadata": {
+    "annotations": {
+      "kubectl.kubernetes.io/last-applied-configuration": "{\"apiVersion\":\"constraints.gatekeeper.sh/v1beta1\",\"kind\":\"K8sBlockHostPath\",\"metadata\":{\"annotations\":{},\"name\":\"no-hostpath-volumes\"},\"spec\":{\"match\":{\"kinds\":[{\"apiGroups\":[\"\"],\"kinds\":[\"Pod\"]}]}}}\n"
+    },
+    "creationTimestamp": "2025-08-08T13:00:44Z",
+    "generation": 1,
+    "name": "no-hostpath-volumes",
+    "resourceVersion": "5098",
+    "uid": "de07c58d-429e-4180-893e-0b14e12bcd47"
+  },
+  "spec": {
+    "enforcementAction": "deny",
+    "match": {
+      "kinds": [
+        {
+          "apiGroups": [
+            ""
+          ],
+          "kinds": [
+            "Pod"
+          ]
+        }
+      ]
+    }
+  },
+  "status": {
+    "auditTimestamp": "2025-08-08T13:19:24Z",
+    "byPod": [
+      {
+        "constraintUID": "de07c58d-429e-4180-893e-0b14e12bcd47",
+        "enforced": true,
+        "enforcementPointsStatus": [
+          {
+            "enforcementPoint": "vap.k8s.io",
+            "message": "K8sNativeValidation engine is missing",
+            "observedGeneration": 1,
+            "state": "error"
+          }
+        ],
+        "id": "gatekeeper-audit-65fffcf58b-4nj9t",
+        "observedGeneration": 1,
+        "operations": [
+          "audit",
+          "generate",
+          "mutation-status",
+          "status"
+        ]
+      },
+      {
+        "constraintUID": "de07c58d-429e-4180-893e-0b14e12bcd47",
+        "enforced": true,
+        "id": "gatekeeper-controller-manager-b9d676cd7-f87h7",
+        "observedGeneration": 1,
+        "operations": [
+          "mutation-webhook",
+          "webhook"
+        ]
+      },
+      {
+        "constraintUID": "de07c58d-429e-4180-893e-0b14e12bcd47",
+        "enforced": true,
+        "id": "gatekeeper-controller-manager-b9d676cd7-l2v7q",
+        "observedGeneration": 1,
+        "operations": [
+          "mutation-webhook",
+          "webhook"
+        ]
+      },
+      {
+        "constraintUID": "de07c58d-429e-4180-893e-0b14e12bcd47",
+        "enforced": true,
+        "id": "gatekeeper-controller-manager-b9d676cd7-mrc4b",
+        "observedGeneration": 1,
+        "operations": [
+          "mutation-webhook",
+          "webhook"
+        ]
+      }
+    ],
+    "totalViolations": 6,
+    "violations": [
+      {
+        "enforcementAction": "deny",
+        "group": "",
+        "kind": "Pod",
+        "message": "Les volumes hostPath sont interdits",
+        "name": "storage-provisioner",
+        "namespace": "kube-system",
+        "version": "v1"
+      },
+      {
+        "enforcementAction": "deny",
+        "group": "",
+        "kind": "Pod",
+        "message": "Les volumes hostPath sont interdits",
+        "name": "kube-scheduler-minikube",
+        "namespace": "kube-system",
+        "version": "v1"
+      },
+      {
+        "enforcementAction": "deny",
+        "group": "",
+        "kind": "Pod",
+        "message": "Les volumes hostPath sont interdits",
+        "name": "kube-proxy-s46wr",
+        "namespace": "kube-system",
+        "version": "v1"
+      },
+      {
+        "enforcementAction": "deny",
+        "group": "",
+        "kind": "Pod",
+        "message": "Les volumes hostPath sont interdits",
+        "name": "kube-controller-manager-minikube",
+        "namespace": "kube-system",
+        "version": "v1"
+      },
+      {
+        "enforcementAction": "deny",
+        "group": "",
+        "kind": "Pod",
+        "message": "Les volumes hostPath sont interdits",
+        "name": "kube-apiserver-minikube",
+        "namespace": "kube-system",
+        "version": "v1"
+      },
+      {
+        "enforcementAction": "deny",
+        "group": "",
+        "kind": "Pod",
+        "message": "Les volumes hostPath sont interdits",
+        "name": "etcd-minikube",
+        "namespace": "kube-system",
+        "version": "v1"
+      }
+    ]
+  }
+}
+{
+  "apiVersion": "constraints.gatekeeper.sh/v1beta1",
+  "kind": "K8sBlockHostPath",
+  "metadata": {
+    "annotations": {
+      "kubectl.kubernetes.io/last-applied-configuration": "{\"apiVersion\":\"constraints.gatekeeper.sh/v1beta1\",\"kind\":\"K8sBlockHostPath\",\"metadata\":{\"annotations\":{},\"name\":\"no-hostpath-volumes\"},\"spec\":{\"match\":{\"kinds\":[{\"apiGroups\":[\"\"],\"kinds\":[\"Pod\"]}]}}}\n"
+    },
+    "creationTimestamp": "2025-08-08T13:00:44Z",
+    "generation": 1,
+    "name": "no-hostpath-volumes",
+    "resourceVersion": "5098",
+    "uid": "de07c58d-429e-4180-893e-0b14e12bcd47"
+  },
+  "spec": {
+    "enforcementAction": "deny",
+    "match": {
+      "kinds": [
+        {
+          "apiGroups": [
+            ""
+          ],
+          "kinds": [
+            "Pod"
+          ]
+        }
+      ]
+    }
+  },
+  "status": {
+    "auditTimestamp": "2025-08-08T13:19:24Z",
+    "byPod": [
+      {
+        "constraintUID": "de07c58d-429e-4180-893e-0b14e12bcd47",
+        "enforced": true,
+        "enforcementPointsStatus": [
+          {
+            "enforcementPoint": "vap.k8s.io",
+            "message": "K8sNativeValidation engine is missing",
+            "observedGeneration": 1,
+            "state": "error"
+          }
+        ],
+        "id": "gatekeeper-audit-65fffcf58b-4nj9t",
+        "observedGeneration": 1,
+        "operations": [
+          "audit",
+          "generate",
+          "mutation-status",
+          "status"
+        ]
+      },
+      {
+        "constraintUID": "de07c58d-429e-4180-893e-0b14e12bcd47",
+        "enforced": true,
+        "id": "gatekeeper-controller-manager-b9d676cd7-f87h7",
+        "observedGeneration": 1,
+        "operations": [
+          "mutation-webhook",
+          "webhook"
+        ]
+      },
+      {
+        "constraintUID": "de07c58d-429e-4180-893e-0b14e12bcd47",
+        "enforced": true,
+        "id": "gatekeeper-controller-manager-b9d676cd7-l2v7q",
+        "observedGeneration": 1,
+        "operations": [
+          "mutation-webhook",
+          "webhook"
+        ]
+      },
+      {
+        "constraintUID": "de07c58d-429e-4180-893e-0b14e12bcd47",
+        "enforced": true,
+        "id": "gatekeeper-controller-manager-b9d676cd7-mrc4b",
+        "observedGeneration": 1,
+        "operations": [
+          "mutation-webhook",
+          "webhook"
+        ]
+      }
+    ],
+    "totalViolations": 6,
+    "violations": [
+      {
+        "enforcementAction": "deny",
+        "group": "",
+        "kind": "Pod",
+        "message": "Les volumes hostPath sont interdits",
+        "name": "storage-provisioner",
+        "namespace": "kube-system",
+        "version": "v1"
+      },
+      {
+        "enforcementAction": "deny",
+        "group": "",
+        "kind": "Pod",
+        "message": "Les volumes hostPath sont interdits",
+        "name": "kube-scheduler-minikube",
+        "namespace": "kube-system",
+        "version": "v1"
+      },
+      {
+        "enforcementAction": "deny",
+        "group": "",
+        "kind": "Pod",
+        "message": "Les volumes hostPath sont interdits",
+        "name": "kube-proxy-s46wr",
+        "namespace": "kube-system",
+        "version": "v1"
+      },
+      {
+        "enforcementAction": "deny",
+        "group": "",
+        "kind": "Pod",
+        "message": "Les volumes hostPath sont interdits",
+        "name": "kube-controller-manager-minikube",
+        "namespace": "kube-system",
+        "version": "v1"
+      },
+      {
+        "enforcementAction": "deny",
+        "group": "",
+        "kind": "Pod",
+        "message": "Les volumes hostPath sont interdits",
+        "name": "kube-apiserver-minikube",
+        "namespace": "kube-system",
+        "version": "v1"
+      },
+      {
+        "enforcementAction": "deny",
+        "group": "",
+        "kind": "Pod",
+        "message": "Les volumes hostPath sont interdits",
+        "name": "etcd-minikube",
+        "namespace": "kube-system",
+        "version": "v1"
+      }
+    ]
+  }
+}
+{
+  "apiVersion": "constraints.gatekeeper.sh/v1beta1",
+  "kind": "K8sBlockHostPath",
+  "metadata": {
+    "annotations": {
+      "kubectl.kubernetes.io/last-applied-configuration": "{\"apiVersion\":\"constraints.gatekeeper.sh/v1beta1\",\"kind\":\"K8sBlockHostPath\",\"metadata\":{\"annotations\":{},\"name\":\"no-hostpath-volumes\"},\"spec\":{\"match\":{\"kinds\":[{\"apiGroups\":[\"\"],\"kinds\":[\"Pod\"]}]}}}\n"
+    },
+    "creationTimestamp": "2025-08-08T13:00:44Z",
+    "generation": 1,
+    "name": "no-hostpath-volumes",
+    "resourceVersion": "5098",
+    "uid": "de07c58d-429e-4180-893e-0b14e12bcd47"
+  },
+  "spec": {
+    "enforcementAction": "deny",
+    "match": {
+      "kinds": [
+        {
+          "apiGroups": [
+            ""
+          ],
+          "kinds": [
+            "Pod"
+          ]
+        }
+      ]
+    }
+  },
+  "status": {
+    "auditTimestamp": "2025-08-08T13:19:24Z",
+    "byPod": [
+      {
+        "constraintUID": "de07c58d-429e-4180-893e-0b14e12bcd47",
+        "enforced": true,
+        "enforcementPointsStatus": [
+          {
+            "enforcementPoint": "vap.k8s.io",
+            "message": "K8sNativeValidation engine is missing",
+            "observedGeneration": 1,
+            "state": "error"
+          }
+        ],
+        "id": "gatekeeper-audit-65fffcf58b-4nj9t",
+        "observedGeneration": 1,
+        "operations": [
+          "audit",
+          "generate",
+          "mutation-status",
+          "status"
+        ]
+      },
+      {
+        "constraintUID": "de07c58d-429e-4180-893e-0b14e12bcd47",
+        "enforced": true,
+        "id": "gatekeeper-controller-manager-b9d676cd7-f87h7",
+        "observedGeneration": 1,
+        "operations": [
+          "mutation-webhook",
+          "webhook"
+        ]
+      },
+      {
+        "constraintUID": "de07c58d-429e-4180-893e-0b14e12bcd47",
+        "enforced": true,
+        "id": "gatekeeper-controller-manager-b9d676cd7-l2v7q",
+        "observedGeneration": 1,
+        "operations": [
+          "mutation-webhook",
+          "webhook"
+        ]
+      },
+      {
+        "constraintUID": "de07c58d-429e-4180-893e-0b14e12bcd47",
+        "enforced": true,
+        "id": "gatekeeper-controller-manager-b9d676cd7-mrc4b",
+        "observedGeneration": 1,
+        "operations": [
+          "mutation-webhook",
+          "webhook"
+        ]
+      }
+    ],
+    "totalViolations": 6,
+    "violations": [
+      {
+        "enforcementAction": "deny",
+        "group": "",
+        "kind": "Pod",
+        "message": "Les volumes hostPath sont interdits",
+        "name": "storage-provisioner",
+        "namespace": "kube-system",
+        "version": "v1"
+      },
+      {
+        "enforcementAction": "deny",
+        "group": "",
+        "kind": "Pod",
+        "message": "Les volumes hostPath sont interdits",
+        "name": "kube-scheduler-minikube",
+        "namespace": "kube-system",
+        "version": "v1"
+      },
+      {
+        "enforcementAction": "deny",
+        "group": "",
+        "kind": "Pod",
+        "message": "Les volumes hostPath sont interdits",
+        "name": "kube-proxy-s46wr",
+        "namespace": "kube-system",
+        "version": "v1"
+      },
+      {
+        "enforcementAction": "deny",
+        "group": "",
+        "kind": "Pod",
+        "message": "Les volumes hostPath sont interdits",
+        "name": "kube-controller-manager-minikube",
+        "namespace": "kube-system",
+        "version": "v1"
+      },
+      {
+        "enforcementAction": "deny",
+        "group": "",
+        "kind": "Pod",
+        "message": "Les volumes hostPath sont interdits",
+        "name": "kube-apiserver-minikube",
+        "namespace": "kube-system",
+        "version": "v1"
+      },
+      {
+        "enforcementAction": "deny",
+        "group": "",
+        "kind": "Pod",
+        "message": "Les volumes hostPath sont interdits",
+        "name": "etcd-minikube",
+        "namespace": "kube-system",
+        "version": "v1"
+      }
+    ]
+  }
+}
+{
+  "apiVersion": "constraints.gatekeeper.sh/v1beta1",
+  "kind": "K8sBlockPrivileged",
+  "metadata": {
+    "annotations": {
+      "kubectl.kubernetes.io/last-applied-configuration": "{\"apiVersion\":\"constraints.gatekeeper.sh/v1beta1\",\"kind\":\"K8sBlockPrivileged\",\"metadata\":{\"annotations\":{},\"name\":\"no-privileged-containers\"},\"spec\":{\"match\":{\"kinds\":[{\"apiGroups\":[\"\"],\"kinds\":[\"Pod\"]}]}}}\n"
+    },
+    "creationTimestamp": "2025-08-08T13:00:44Z",
+    "generation": 1,
+    "name": "no-privileged-containers",
+    "resourceVersion": "5091",
+    "uid": "2139a653-1fb9-4226-b9ff-5070e1e52c30"
+  },
+  "spec": {
+    "enforcementAction": "deny",
+    "match": {
+      "kinds": [
+        {
+          "apiGroups": [
+            ""
+          ],
+          "kinds": [
+            "Pod"
+          ]
+        }
+      ]
+    }
+  },
+  "status": {
+    "auditTimestamp": "2025-08-08T13:19:24Z",
+    "byPod": [
+      {
+        "constraintUID": "2139a653-1fb9-4226-b9ff-5070e1e52c30",
+        "enforced": true,
+        "enforcementPointsStatus": [
+          {
+            "enforcementPoint": "vap.k8s.io",
+            "message": "K8sNativeValidation engine is missing",
+            "observedGeneration": 1,
+            "state": "error"
+          }
+        ],
+        "id": "gatekeeper-audit-65fffcf58b-4nj9t",
+        "observedGeneration": 1,
+        "operations": [
+          "audit",
+          "generate",
+          "mutation-status",
+          "status"
+        ]
+      },
+      {
+        "constraintUID": "2139a653-1fb9-4226-b9ff-5070e1e52c30",
+        "enforced": true,
+        "id": "gatekeeper-controller-manager-b9d676cd7-f87h7",
+        "observedGeneration": 1,
+        "operations": [
+          "mutation-webhook",
+          "webhook"
+        ]
+      },
+      {
+        "constraintUID": "2139a653-1fb9-4226-b9ff-5070e1e52c30",
+        "enforced": true,
+        "id": "gatekeeper-controller-manager-b9d676cd7-l2v7q",
+        "observedGeneration": 1,
+        "operations": [
+          "mutation-webhook",
+          "webhook"
+        ]
+      },
+      {
+        "constraintUID": "2139a653-1fb9-4226-b9ff-5070e1e52c30",
+        "enforced": true,
+        "id": "gatekeeper-controller-manager-b9d676cd7-mrc4b",
+        "observedGeneration": 1,
+        "operations": [
+          "mutation-webhook",
+          "webhook"
+        ]
+      }
+    ],
+    "totalViolations": 1,
+    "violations": [
+      {
+        "enforcementAction": "deny",
+        "group": "",
+        "kind": "Pod",
+        "message": "Les conteneurs privilégiés sont interdits",
+        "name": "kube-proxy-s46wr",
+        "namespace": "kube-system",
+        "version": "v1"
+      }
+    ]
+  }
+}
+{
+  "apiVersion": "constraints.gatekeeper.sh/v1beta1",
+  "kind": "K8sRequiredLabels",
+  "metadata": {
+    "annotations": {
+      "kubectl.kubernetes.io/last-applied-configuration": "{\"apiVersion\":\"constraints.gatekeeper.sh/v1beta1\",\"kind\":\"K8sRequiredLabels\",\"metadata\":{\"annotations\":{},\"name\":\"ns-must-have-env-label\"},\"spec\":{\"match\":{\"kinds\":[{\"apiGroups\":[\"\"],\"kinds\":[\"Namespace\"]}]},\"parameters\":{\"labels\":[\"env\"]}}}\n"
+    },
+    "creationTimestamp": "2025-08-08T13:00:44Z",
+    "generation": 1,
+    "name": "ns-must-have-env-label",
+    "resourceVersion": "5095",
+    "uid": "cd907238-09e7-43a7-bcc9-efe3affb2c1a"
+  },
+  "spec": {
+    "enforcementAction": "deny",
+    "match": {
+      "kinds": [
+        {
+          "apiGroups": [
+            ""
+          ],
+          "kinds": [
+            "Namespace"
+          ]
+        }
+      ]
+    },
+    "parameters": {
+      "labels": [
+        "env"
+      ]
+    }
+  },
+  "status": {
+    "auditTimestamp": "2025-08-08T13:19:24Z",
+    "byPod": [
+      {
+        "constraintUID": "cd907238-09e7-43a7-bcc9-efe3affb2c1a",
+        "enforced": true,
+        "enforcementPointsStatus": [
+          {
+            "enforcementPoint": "vap.k8s.io",
+            "message": "K8sNativeValidation engine is missing",
+            "observedGeneration": 1,
+            "state": "error"
+          }
+        ],
+        "id": "gatekeeper-audit-65fffcf58b-4nj9t",
+        "observedGeneration": 1,
+        "operations": [
+          "audit",
+          "generate",
+          "mutation-status",
+          "status"
+        ]
+      },
+      {
+        "constraintUID": "cd907238-09e7-43a7-bcc9-efe3affb2c1a",
+        "enforced": true,
+        "id": "gatekeeper-controller-manager-b9d676cd7-f87h7",
+        "observedGeneration": 1,
+        "operations": [
+          "mutation-webhook",
+          "webhook"
+        ]
+      },
+      {
+        "constraintUID": "cd907238-09e7-43a7-bcc9-efe3affb2c1a",
+        "enforced": true,
+        "id": "gatekeeper-controller-manager-b9d676cd7-l2v7q",
+        "observedGeneration": 1,
+        "operations": [
+          "mutation-webhook",
+          "webhook"
+        ]
+      },
+      {
+        "constraintUID": "cd907238-09e7-43a7-bcc9-efe3affb2c1a",
+        "enforced": true,
+        "id": "gatekeeper-controller-manager-b9d676cd7-mrc4b",
+        "observedGeneration": 1,
+        "operations": [
+          "mutation-webhook",
+          "webhook"
+        ]
+      }
+    ],
+    "totalViolations": 5,
+    "violations": [
+      {
+        "enforcementAction": "deny",
+        "group": "",
+        "kind": "Namespace",
+        "message": "Le label 'env' est obligatoire",
+        "name": "kube-system",
+        "version": "v1"
+      },
+      {
+        "enforcementAction": "deny",
+        "group": "",
+        "kind": "Namespace",
+        "message": "Le label 'env' est obligatoire",
+        "name": "kube-public",
+        "version": "v1"
+      },
+      {
+        "enforcementAction": "deny",
+        "group": "",
+        "kind": "Namespace",
+        "message": "Le label 'env' est obligatoire",
+        "name": "kube-node-lease",
+        "version": "v1"
+      },
+      {
+        "enforcementAction": "deny",
+        "group": "",
+        "kind": "Namespace",
+        "message": "Le label 'env' est obligatoire",
+        "name": "gatekeeper-system",
+        "version": "v1"
+      },
+      {
+        "enforcementAction": "deny",
+        "group": "",
+        "kind": "Namespace",
+        "message": "Le label 'env' est obligatoire",
+        "name": "default",
+        "version": "v1"
+      }
+    ]
+  }
+}
+{
+  "apiVersion": "constraints.gatekeeper.sh/v1beta1",
+  "kind": "K8sRequiredLabels",
+  "metadata": {
+    "annotations": {
+      "kubectl.kubernetes.io/last-applied-configuration": "{\"apiVersion\":\"constraints.gatekeeper.sh/v1beta1\",\"kind\":\"K8sRequiredLabels\",\"metadata\":{\"annotations\":{},\"name\":\"ns-must-have-env-label\"},\"spec\":{\"match\":{\"kinds\":[{\"apiGroups\":[\"\"],\"kinds\":[\"Namespace\"]}]},\"parameters\":{\"labels\":[\"env\"]}}}\n"
+    },
+    "creationTimestamp": "2025-08-08T13:00:44Z",
+    "generation": 1,
+    "name": "ns-must-have-env-label",
+    "resourceVersion": "5095",
+    "uid": "cd907238-09e7-43a7-bcc9-efe3affb2c1a"
+  },
+  "spec": {
+    "enforcementAction": "deny",
+    "match": {
+      "kinds": [
+        {
+          "apiGroups": [
+            ""
+          ],
+          "kinds": [
+            "Namespace"
+          ]
+        }
+      ]
+    },
+    "parameters": {
+      "labels": [
+        "env"
+      ]
+    }
+  },
+  "status": {
+    "auditTimestamp": "2025-08-08T13:19:24Z",
+    "byPod": [
+      {
+        "constraintUID": "cd907238-09e7-43a7-bcc9-efe3affb2c1a",
+        "enforced": true,
+        "enforcementPointsStatus": [
+          {
+            "enforcementPoint": "vap.k8s.io",
+            "message": "K8sNativeValidation engine is missing",
+            "observedGeneration": 1,
+            "state": "error"
+          }
+        ],
+        "id": "gatekeeper-audit-65fffcf58b-4nj9t",
+        "observedGeneration": 1,
+        "operations": [
+          "audit",
+          "generate",
+          "mutation-status",
+          "status"
+        ]
+      },
+      {
+        "constraintUID": "cd907238-09e7-43a7-bcc9-efe3affb2c1a",
+        "enforced": true,
+        "id": "gatekeeper-controller-manager-b9d676cd7-f87h7",
+        "observedGeneration": 1,
+        "operations": [
+          "mutation-webhook",
+          "webhook"
+        ]
+      },
+      {
+        "constraintUID": "cd907238-09e7-43a7-bcc9-efe3affb2c1a",
+        "enforced": true,
+        "id": "gatekeeper-controller-manager-b9d676cd7-l2v7q",
+        "observedGeneration": 1,
+        "operations": [
+          "mutation-webhook",
+          "webhook"
+        ]
+      },
+      {
+        "constraintUID": "cd907238-09e7-43a7-bcc9-efe3affb2c1a",
+        "enforced": true,
+        "id": "gatekeeper-controller-manager-b9d676cd7-mrc4b",
+        "observedGeneration": 1,
+        "operations": [
+          "mutation-webhook",
+          "webhook"
+        ]
+      }
+    ],
+    "totalViolations": 5,
+    "violations": [
+      {
+        "enforcementAction": "deny",
+        "group": "",
+        "kind": "Namespace",
+        "message": "Le label 'env' est obligatoire",
+        "name": "kube-system",
+        "version": "v1"
+      },
+      {
+        "enforcementAction": "deny",
+        "group": "",
+        "kind": "Namespace",
+        "message": "Le label 'env' est obligatoire",
+        "name": "kube-public",
+        "version": "v1"
+      },
+      {
+        "enforcementAction": "deny",
+        "group": "",
+        "kind": "Namespace",
+        "message": "Le label 'env' est obligatoire",
+        "name": "kube-node-lease",
+        "version": "v1"
+      },
+      {
+        "enforcementAction": "deny",
+        "group": "",
+        "kind": "Namespace",
+        "message": "Le label 'env' est obligatoire",
+        "name": "gatekeeper-system",
+        "version": "v1"
+      },
+      {
+        "enforcementAction": "deny",
+        "group": "",
+        "kind": "Namespace",
+        "message": "Le label 'env' est obligatoire",
+        "name": "default",
+        "version": "v1"
+      }
+    ]
+  }
+}
+{
+  "apiVersion": "constraints.gatekeeper.sh/v1beta1",
+  "kind": "K8sRequiredLabels",
+  "metadata": {
+    "annotations": {
+      "kubectl.kubernetes.io/last-applied-configuration": "{\"apiVersion\":\"constraints.gatekeeper.sh/v1beta1\",\"kind\":\"K8sRequiredLabels\",\"metadata\":{\"annotations\":{},\"name\":\"ns-must-have-env-label\"},\"spec\":{\"match\":{\"kinds\":[{\"apiGroups\":[\"\"],\"kinds\":[\"Namespace\"]}]},\"parameters\":{\"labels\":[\"env\"]}}}\n"
+    },
+    "creationTimestamp": "2025-08-08T13:00:44Z",
+    "generation": 1,
+    "name": "ns-must-have-env-label",
+    "resourceVersion": "5095",
+    "uid": "cd907238-09e7-43a7-bcc9-efe3affb2c1a"
+  },
+  "spec": {
+    "enforcementAction": "deny",
+    "match": {
+      "kinds": [
+        {
+          "apiGroups": [
+            ""
+          ],
+          "kinds": [
+            "Namespace"
+          ]
+        }
+      ]
+    },
+    "parameters": {
+      "labels": [
+        "env"
+      ]
+    }
+  },
+  "status": {
+    "auditTimestamp": "2025-08-08T13:19:24Z",
+    "byPod": [
+      {
+        "constraintUID": "cd907238-09e7-43a7-bcc9-efe3affb2c1a",
+        "enforced": true,
+        "enforcementPointsStatus": [
+          {
+            "enforcementPoint": "vap.k8s.io",
+            "message": "K8sNativeValidation engine is missing",
+            "observedGeneration": 1,
+            "state": "error"
+          }
+        ],
+        "id": "gatekeeper-audit-65fffcf58b-4nj9t",
+        "observedGeneration": 1,
+        "operations": [
+          "audit",
+          "generate",
+          "mutation-status",
+          "status"
+        ]
+      },
+      {
+        "constraintUID": "cd907238-09e7-43a7-bcc9-efe3affb2c1a",
+        "enforced": true,
+        "id": "gatekeeper-controller-manager-b9d676cd7-f87h7",
+        "observedGeneration": 1,
+        "operations": [
+          "mutation-webhook",
+          "webhook"
+        ]
+      },
+      {
+        "constraintUID": "cd907238-09e7-43a7-bcc9-efe3affb2c1a",
+        "enforced": true,
+        "id": "gatekeeper-controller-manager-b9d676cd7-l2v7q",
+        "observedGeneration": 1,
+        "operations": [
+          "mutation-webhook",
+          "webhook"
+        ]
+      },
+      {
+        "constraintUID": "cd907238-09e7-43a7-bcc9-efe3affb2c1a",
+        "enforced": true,
+        "id": "gatekeeper-controller-manager-b9d676cd7-mrc4b",
+        "observedGeneration": 1,
+        "operations": [
+          "mutation-webhook",
+          "webhook"
+        ]
+      }
+    ],
+    "totalViolations": 5,
+    "violations": [
+      {
+        "enforcementAction": "deny",
+        "group": "",
+        "kind": "Namespace",
+        "message": "Le label 'env' est obligatoire",
+        "name": "kube-system",
+        "version": "v1"
+      },
+      {
+        "enforcementAction": "deny",
+        "group": "",
+        "kind": "Namespace",
+        "message": "Le label 'env' est obligatoire",
+        "name": "kube-public",
+        "version": "v1"
+      },
+      {
+        "enforcementAction": "deny",
+        "group": "",
+        "kind": "Namespace",
+        "message": "Le label 'env' est obligatoire",
+        "name": "kube-node-lease",
+        "version": "v1"
+      },
+      {
+        "enforcementAction": "deny",
+        "group": "",
+        "kind": "Namespace",
+        "message": "Le label 'env' est obligatoire",
+        "name": "gatekeeper-system",
+        "version": "v1"
+      },
+      {
+        "enforcementAction": "deny",
+        "group": "",
+        "kind": "Namespace",
+        "message": "Le label 'env' est obligatoire",
+        "name": "default",
+        "version": "v1"
+      }
+    ]
+  }
+}
+{
+  "apiVersion": "constraints.gatekeeper.sh/v1beta1",
+  "kind": "K8sRequiredLabels",
+  "metadata": {
+    "annotations": {
+      "kubectl.kubernetes.io/last-applied-configuration": "{\"apiVersion\":\"constraints.gatekeeper.sh/v1beta1\",\"kind\":\"K8sRequiredLabels\",\"metadata\":{\"annotations\":{},\"name\":\"ns-must-have-env-label\"},\"spec\":{\"match\":{\"kinds\":[{\"apiGroups\":[\"\"],\"kinds\":[\"Namespace\"]}]},\"parameters\":{\"labels\":[\"env\"]}}}\n"
+    },
+    "creationTimestamp": "2025-08-08T13:00:44Z",
+    "generation": 1,
+    "name": "ns-must-have-env-label",
+    "resourceVersion": "5095",
+    "uid": "cd907238-09e7-43a7-bcc9-efe3affb2c1a"
+  },
+  "spec": {
+    "enforcementAction": "deny",
+    "match": {
+      "kinds": [
+        {
+          "apiGroups": [
+            ""
+          ],
+          "kinds": [
+            "Namespace"
+          ]
+        }
+      ]
+    },
+    "parameters": {
+      "labels": [
+        "env"
+      ]
+    }
+  },
+  "status": {
+    "auditTimestamp": "2025-08-08T13:19:24Z",
+    "byPod": [
+      {
+        "constraintUID": "cd907238-09e7-43a7-bcc9-efe3affb2c1a",
+        "enforced": true,
+        "enforcementPointsStatus": [
+          {
+            "enforcementPoint": "vap.k8s.io",
+            "message": "K8sNativeValidation engine is missing",
+            "observedGeneration": 1,
+            "state": "error"
+          }
+        ],
+        "id": "gatekeeper-audit-65fffcf58b-4nj9t",
+        "observedGeneration": 1,
+        "operations": [
+          "audit",
+          "generate",
+          "mutation-status",
+          "status"
+        ]
+      },
+      {
+        "constraintUID": "cd907238-09e7-43a7-bcc9-efe3affb2c1a",
+        "enforced": true,
+        "id": "gatekeeper-controller-manager-b9d676cd7-f87h7",
+        "observedGeneration": 1,
+        "operations": [
+          "mutation-webhook",
+          "webhook"
+        ]
+      },
+      {
+        "constraintUID": "cd907238-09e7-43a7-bcc9-efe3affb2c1a",
+        "enforced": true,
+        "id": "gatekeeper-controller-manager-b9d676cd7-l2v7q",
+        "observedGeneration": 1,
+        "operations": [
+          "mutation-webhook",
+          "webhook"
+        ]
+      },
+      {
+        "constraintUID": "cd907238-09e7-43a7-bcc9-efe3affb2c1a",
+        "enforced": true,
+        "id": "gatekeeper-controller-manager-b9d676cd7-mrc4b",
+        "observedGeneration": 1,
+        "operations": [
+          "mutation-webhook",
+          "webhook"
+        ]
+      }
+    ],
+    "totalViolations": 5,
+    "violations": [
+      {
+        "enforcementAction": "deny",
+        "group": "",
+        "kind": "Namespace",
+        "message": "Le label 'env' est obligatoire",
+        "name": "kube-system",
+        "version": "v1"
+      },
+      {
+        "enforcementAction": "deny",
+        "group": "",
+        "kind": "Namespace",
+        "message": "Le label 'env' est obligatoire",
+        "name": "kube-public",
+        "version": "v1"
+      },
+      {
+        "enforcementAction": "deny",
+        "group": "",
+        "kind": "Namespace",
+        "message": "Le label 'env' est obligatoire",
+        "name": "kube-node-lease",
+        "version": "v1"
+      },
+      {
+        "enforcementAction": "deny",
+        "group": "",
+        "kind": "Namespace",
+        "message": "Le label 'env' est obligatoire",
+        "name": "gatekeeper-system",
+        "version": "v1"
+      },
+      {
+        "enforcementAction": "deny",
+        "group": "",
+        "kind": "Namespace",
+        "message": "Le label 'env' est obligatoire",
+        "name": "default",
+        "version": "v1"
+      }
+    ]
+  }
+}
+{
+  "apiVersion": "constraints.gatekeeper.sh/v1beta1",
+  "kind": "K8sRequiredLabels",
+  "metadata": {
+    "annotations": {
+      "kubectl.kubernetes.io/last-applied-configuration": "{\"apiVersion\":\"constraints.gatekeeper.sh/v1beta1\",\"kind\":\"K8sRequiredLabels\",\"metadata\":{\"annotations\":{},\"name\":\"ns-must-have-env-label\"},\"spec\":{\"match\":{\"kinds\":[{\"apiGroups\":[\"\"],\"kinds\":[\"Namespace\"]}]},\"parameters\":{\"labels\":[\"env\"]}}}\n"
+    },
+    "creationTimestamp": "2025-08-08T13:00:44Z",
+    "generation": 1,
+    "name": "ns-must-have-env-label",
+    "resourceVersion": "5095",
+    "uid": "cd907238-09e7-43a7-bcc9-efe3affb2c1a"
+  },
+  "spec": {
+    "enforcementAction": "deny",
+    "match": {
+      "kinds": [
+        {
+          "apiGroups": [
+            ""
+          ],
+          "kinds": [
+            "Namespace"
+          ]
+        }
+      ]
+    },
+    "parameters": {
+      "labels": [
+        "env"
+      ]
+    }
+  },
+  "status": {
+    "auditTimestamp": "2025-08-08T13:19:24Z",
+    "byPod": [
+      {
+        "constraintUID": "cd907238-09e7-43a7-bcc9-efe3affb2c1a",
+        "enforced": true,
+        "enforcementPointsStatus": [
+          {
+            "enforcementPoint": "vap.k8s.io",
+            "message": "K8sNativeValidation engine is missing",
+            "observedGeneration": 1,
+            "state": "error"
+          }
+        ],
+        "id": "gatekeeper-audit-65fffcf58b-4nj9t",
+        "observedGeneration": 1,
+        "operations": [
+          "audit",
+          "generate",
+          "mutation-status",
+          "status"
+        ]
+      },
+      {
+        "constraintUID": "cd907238-09e7-43a7-bcc9-efe3affb2c1a",
+        "enforced": true,
+        "id": "gatekeeper-controller-manager-b9d676cd7-f87h7",
+        "observedGeneration": 1,
+        "operations": [
+          "mutation-webhook",
+          "webhook"
+        ]
+      },
+      {
+        "constraintUID": "cd907238-09e7-43a7-bcc9-efe3affb2c1a",
+        "enforced": true,
+        "id": "gatekeeper-controller-manager-b9d676cd7-l2v7q",
+        "observedGeneration": 1,
+        "operations": [
+          "mutation-webhook",
+          "webhook"
+        ]
+      },
+      {
+        "constraintUID": "cd907238-09e7-43a7-bcc9-efe3affb2c1a",
+        "enforced": true,
+        "id": "gatekeeper-controller-manager-b9d676cd7-mrc4b",
+        "observedGeneration": 1,
+        "operations": [
+          "mutation-webhook",
+          "webhook"
+        ]
+      }
+    ],
+    "totalViolations": 5,
+    "violations": [
+      {
+        "enforcementAction": "deny",
+        "group": "",
+        "kind": "Namespace",
+        "message": "Le label 'env' est obligatoire",
+        "name": "kube-system",
+        "version": "v1"
+      },
+      {
+        "enforcementAction": "deny",
+        "group": "",
+        "kind": "Namespace",
+        "message": "Le label 'env' est obligatoire",
+        "name": "kube-public",
+        "version": "v1"
+      },
+      {
+        "enforcementAction": "deny",
+        "group": "",
+        "kind": "Namespace",
+        "message": "Le label 'env' est obligatoire",
+        "name": "kube-node-lease",
+        "version": "v1"
+      },
+      {
+        "enforcementAction": "deny",
+        "group": "",
+        "kind": "Namespace",
+        "message": "Le label 'env' est obligatoire",
+        "name": "gatekeeper-system",
+        "version": "v1"
+      },
+      {
+        "enforcementAction": "deny",
+        "group": "",
+        "kind": "Namespace",
+        "message": "Le label 'env' est obligatoire",
+        "name": "default",
+        "version": "v1"
+      }
+    ]
+  }
+}
+{
+  "apiVersion": "constraints.gatekeeper.sh/v1beta1",
+  "kind": "K8sRequiredServiceAnnotations",
+  "metadata": {
+    "annotations": {
+      "kubectl.kubernetes.io/last-applied-configuration": "{\"apiVersion\":\"constraints.gatekeeper.sh/v1beta1\",\"kind\":\"K8sRequiredServiceAnnotations\",\"metadata\":{\"annotations\":{},\"name\":\"require-service-tls-annotation\"},\"spec\":{\"match\":{\"kinds\":[{\"apiGroups\":[\"\"],\"kinds\":[\"Service\"]}]}}}\n"
+    },
+    "creationTimestamp": "2025-08-08T13:00:44Z",
+    "generation": 1,
+    "name": "require-service-tls-annotation",
+    "resourceVersion": "5090",
+    "uid": "ae861b67-c6a7-4eef-9589-534134f9e85b"
+  },
+  "spec": {
+    "enforcementAction": "deny",
+    "match": {
+      "kinds": [
+        {
+          "apiGroups": [
+            ""
+          ],
+          "kinds": [
+            "Service"
+          ]
+        }
+      ]
+    }
+  },
+  "status": {
+    "auditTimestamp": "2025-08-08T13:19:24Z",
+    "byPod": [
+      {
+        "constraintUID": "ae861b67-c6a7-4eef-9589-534134f9e85b",
+        "enforced": true,
+        "enforcementPointsStatus": [
+          {
+            "enforcementPoint": "vap.k8s.io",
+            "message": "K8sNativeValidation engine is missing",
+            "observedGeneration": 1,
+            "state": "error"
+          }
+        ],
+        "id": "gatekeeper-audit-65fffcf58b-4nj9t",
+        "observedGeneration": 1,
+        "operations": [
+          "audit",
+          "generate",
+          "mutation-status",
+          "status"
+        ]
+      },
+      {
+        "constraintUID": "ae861b67-c6a7-4eef-9589-534134f9e85b",
+        "enforced": true,
+        "id": "gatekeeper-controller-manager-b9d676cd7-f87h7",
+        "observedGeneration": 1,
+        "operations": [
+          "mutation-webhook",
+          "webhook"
+        ]
+      },
+      {
+        "constraintUID": "ae861b67-c6a7-4eef-9589-534134f9e85b",
+        "enforced": true,
+        "id": "gatekeeper-controller-manager-b9d676cd7-l2v7q",
+        "observedGeneration": 1,
+        "operations": [
+          "mutation-webhook",
+          "webhook"
+        ]
+      },
+      {
+        "constraintUID": "ae861b67-c6a7-4eef-9589-534134f9e85b",
+        "enforced": true,
+        "id": "gatekeeper-controller-manager-b9d676cd7-mrc4b",
+        "observedGeneration": 1,
+        "operations": [
+          "mutation-webhook",
+          "webhook"
+        ]
+      }
+    ],
+    "totalViolations": 3,
+    "violations": [
+      {
+        "enforcementAction": "deny",
+        "group": "",
+        "kind": "Service",
+        "message": "L'annotation 'security.kubernetes.io/enforce-tls' est obligatoire",
+        "name": "kube-dns",
+        "namespace": "kube-system",
+        "version": "v1"
+      },
+      {
+        "enforcementAction": "deny",
+        "group": "",
+        "kind": "Service",
+        "message": "L'annotation 'security.kubernetes.io/enforce-tls' est obligatoire",
+        "name": "gatekeeper-webhook-service",
+        "namespace": "gatekeeper-system",
+        "version": "v1"
+      },
+      {
+        "enforcementAction": "deny",
+        "group": "",
+        "kind": "Service",
+        "message": "L'annotation 'security.kubernetes.io/enforce-tls' est obligatoire",
+        "name": "kubernetes",
+        "namespace": "default",
+        "version": "v1"
+      }
+    ]
+  }
+}
+{
+  "apiVersion": "constraints.gatekeeper.sh/v1beta1",
+  "kind": "K8sRequiredServiceAnnotations",
+  "metadata": {
+    "annotations": {
+      "kubectl.kubernetes.io/last-applied-configuration": "{\"apiVersion\":\"constraints.gatekeeper.sh/v1beta1\",\"kind\":\"K8sRequiredServiceAnnotations\",\"metadata\":{\"annotations\":{},\"name\":\"require-service-tls-annotation\"},\"spec\":{\"match\":{\"kinds\":[{\"apiGroups\":[\"\"],\"kinds\":[\"Service\"]}]}}}\n"
+    },
+    "creationTimestamp": "2025-08-08T13:00:44Z",
+    "generation": 1,
+    "name": "require-service-tls-annotation",
+    "resourceVersion": "5090",
+    "uid": "ae861b67-c6a7-4eef-9589-534134f9e85b"
+  },
+  "spec": {
+    "enforcementAction": "deny",
+    "match": {
+      "kinds": [
+        {
+          "apiGroups": [
+            ""
+          ],
+          "kinds": [
+            "Service"
+          ]
+        }
+      ]
+    }
+  },
+  "status": {
+    "auditTimestamp": "2025-08-08T13:19:24Z",
+    "byPod": [
+      {
+        "constraintUID": "ae861b67-c6a7-4eef-9589-534134f9e85b",
+        "enforced": true,
+        "enforcementPointsStatus": [
+          {
+            "enforcementPoint": "vap.k8s.io",
+            "message": "K8sNativeValidation engine is missing",
+            "observedGeneration": 1,
+            "state": "error"
+          }
+        ],
+        "id": "gatekeeper-audit-65fffcf58b-4nj9t",
+        "observedGeneration": 1,
+        "operations": [
+          "audit",
+          "generate",
+          "mutation-status",
+          "status"
+        ]
+      },
+      {
+        "constraintUID": "ae861b67-c6a7-4eef-9589-534134f9e85b",
+        "enforced": true,
+        "id": "gatekeeper-controller-manager-b9d676cd7-f87h7",
+        "observedGeneration": 1,
+        "operations": [
+          "mutation-webhook",
+          "webhook"
+        ]
+      },
+      {
+        "constraintUID": "ae861b67-c6a7-4eef-9589-534134f9e85b",
+        "enforced": true,
+        "id": "gatekeeper-controller-manager-b9d676cd7-l2v7q",
+        "observedGeneration": 1,
+        "operations": [
+          "mutation-webhook",
+          "webhook"
+        ]
+      },
+      {
+        "constraintUID": "ae861b67-c6a7-4eef-9589-534134f9e85b",
+        "enforced": true,
+        "id": "gatekeeper-controller-manager-b9d676cd7-mrc4b",
+        "observedGeneration": 1,
+        "operations": [
+          "mutation-webhook",
+          "webhook"
+        ]
+      }
+    ],
+    "totalViolations": 3,
+    "violations": [
+      {
+        "enforcementAction": "deny",
+        "group": "",
+        "kind": "Service",
+        "message": "L'annotation 'security.kubernetes.io/enforce-tls' est obligatoire",
+        "name": "kube-dns",
+        "namespace": "kube-system",
+        "version": "v1"
+      },
+      {
+        "enforcementAction": "deny",
+        "group": "",
+        "kind": "Service",
+        "message": "L'annotation 'security.kubernetes.io/enforce-tls' est obligatoire",
+        "name": "gatekeeper-webhook-service",
+        "namespace": "gatekeeper-system",
+        "version": "v1"
+      },
+      {
+        "enforcementAction": "deny",
+        "group": "",
+        "kind": "Service",
+        "message": "L'annotation 'security.kubernetes.io/enforce-tls' est obligatoire",
+        "name": "kubernetes",
+        "namespace": "default",
+        "version": "v1"
+      }
+    ]
+  }
+}
+{
+  "apiVersion": "constraints.gatekeeper.sh/v1beta1",
+  "kind": "K8sRequiredServiceAnnotations",
+  "metadata": {
+    "annotations": {
+      "kubectl.kubernetes.io/last-applied-configuration": "{\"apiVersion\":\"constraints.gatekeeper.sh/v1beta1\",\"kind\":\"K8sRequiredServiceAnnotations\",\"metadata\":{\"annotations\":{},\"name\":\"require-service-tls-annotation\"},\"spec\":{\"match\":{\"kinds\":[{\"apiGroups\":[\"\"],\"kinds\":[\"Service\"]}]}}}\n"
+    },
+    "creationTimestamp": "2025-08-08T13:00:44Z",
+    "generation": 1,
+    "name": "require-service-tls-annotation",
+    "resourceVersion": "5090",
+    "uid": "ae861b67-c6a7-4eef-9589-534134f9e85b"
+  },
+  "spec": {
+    "enforcementAction": "deny",
+    "match": {
+      "kinds": [
+        {
+          "apiGroups": [
+            ""
+          ],
+          "kinds": [
+            "Service"
+          ]
+        }
+      ]
+    }
+  },
+  "status": {
+    "auditTimestamp": "2025-08-08T13:19:24Z",
+    "byPod": [
+      {
+        "constraintUID": "ae861b67-c6a7-4eef-9589-534134f9e85b",
+        "enforced": true,
+        "enforcementPointsStatus": [
+          {
+            "enforcementPoint": "vap.k8s.io",
+            "message": "K8sNativeValidation engine is missing",
+            "observedGeneration": 1,
+            "state": "error"
+          }
+        ],
+        "id": "gatekeeper-audit-65fffcf58b-4nj9t",
+        "observedGeneration": 1,
+        "operations": [
+          "audit",
+          "generate",
+          "mutation-status",
+          "status"
+        ]
+      },
+      {
+        "constraintUID": "ae861b67-c6a7-4eef-9589-534134f9e85b",
+        "enforced": true,
+        "id": "gatekeeper-controller-manager-b9d676cd7-f87h7",
+        "observedGeneration": 1,
+        "operations": [
+          "mutation-webhook",
+          "webhook"
+        ]
+      },
+      {
+        "constraintUID": "ae861b67-c6a7-4eef-9589-534134f9e85b",
+        "enforced": true,
+        "id": "gatekeeper-controller-manager-b9d676cd7-l2v7q",
+        "observedGeneration": 1,
+        "operations": [
+          "mutation-webhook",
+          "webhook"
+        ]
+      },
+      {
+        "constraintUID": "ae861b67-c6a7-4eef-9589-534134f9e85b",
+        "enforced": true,
+        "id": "gatekeeper-controller-manager-b9d676cd7-mrc4b",
+        "observedGeneration": 1,
+        "operations": [
+          "mutation-webhook",
+          "webhook"
+        ]
+      }
+    ],
+    "totalViolations": 3,
+    "violations": [
+      {
+        "enforcementAction": "deny",
+        "group": "",
+        "kind": "Service",
+        "message": "L'annotation 'security.kubernetes.io/enforce-tls' est obligatoire",
+        "name": "kube-dns",
+        "namespace": "kube-system",
+        "version": "v1"
+      },
+      {
+        "enforcementAction": "deny",
+        "group": "",
+        "kind": "Service",
+        "message": "L'annotation 'security.kubernetes.io/enforce-tls' est obligatoire",
+        "name": "gatekeeper-webhook-service",
+        "namespace": "gatekeeper-system",
+        "version": "v1"
+      },
+      {
+        "enforcementAction": "deny",
+        "group": "",
+        "kind": "Service",
+        "message": "L'annotation 'security.kubernetes.io/enforce-tls' est obligatoire",
+        "name": "kubernetes",
+        "namespace": "default",
+        "version": "v1"
+      }
+    ]
+  }
+}
+{
+  "apiVersion": "constraints.gatekeeper.sh/v1beta1",
+  "kind": "K8sRequireProbes",
+  "metadata": {
+    "annotations": {
+      "kubectl.kubernetes.io/last-applied-configuration": "{\"apiVersion\":\"constraints.gatekeeper.sh/v1beta1\",\"kind\":\"K8sRequireProbes\",\"metadata\":{\"annotations\":{},\"name\":\"require-probes\"},\"spec\":{\"match\":{\"kinds\":[{\"apiGroups\":[\"\"],\"kinds\":[\"Pod\"]}]}}}\n"
+    },
+    "creationTimestamp": "2025-08-08T13:00:44Z",
+    "generation": 1,
+    "name": "require-probes",
+    "resourceVersion": "5092",
+    "uid": "103fb1c5-54e6-426c-95c7-5e4c5344be7f"
+  },
+  "spec": {
+    "enforcementAction": "deny",
+    "match": {
+      "kinds": [
+        {
+          "apiGroups": [
+            ""
+          ],
+          "kinds": [
+            "Pod"
+          ]
+        }
+      ]
+    }
+  },
+  "status": {
+    "auditTimestamp": "2025-08-08T13:19:24Z",
+    "byPod": [
+      {
+        "constraintUID": "103fb1c5-54e6-426c-95c7-5e4c5344be7f",
+        "enforced": true,
+        "enforcementPointsStatus": [
+          {
+            "enforcementPoint": "vap.k8s.io",
+            "message": "K8sNativeValidation engine is missing",
+            "observedGeneration": 1,
+            "state": "error"
+          }
+        ],
+        "id": "gatekeeper-audit-65fffcf58b-4nj9t",
+        "observedGeneration": 1,
+        "operations": [
+          "audit",
+          "generate",
+          "mutation-status",
+          "status"
+        ]
+      },
+      {
+        "constraintUID": "103fb1c5-54e6-426c-95c7-5e4c5344be7f",
+        "enforced": true,
+        "id": "gatekeeper-controller-manager-b9d676cd7-f87h7",
+        "observedGeneration": 1,
+        "operations": [
+          "mutation-webhook",
+          "webhook"
+        ]
+      },
+      {
+        "constraintUID": "103fb1c5-54e6-426c-95c7-5e4c5344be7f",
+        "enforced": true,
+        "id": "gatekeeper-controller-manager-b9d676cd7-l2v7q",
+        "observedGeneration": 1,
+        "operations": [
+          "mutation-webhook",
+          "webhook"
+        ]
+      },
+      {
+        "constraintUID": "103fb1c5-54e6-426c-95c7-5e4c5344be7f",
+        "enforced": true,
+        "id": "gatekeeper-controller-manager-b9d676cd7-mrc4b",
+        "observedGeneration": 1,
+        "operations": [
+          "mutation-webhook",
+          "webhook"
+        ]
+      }
+    ],
+    "totalViolations": 2,
+    "violations": [
+      {
+        "enforcementAction": "deny",
+        "group": "",
+        "kind": "Pod",
+        "message": "Les probes (liveness/readiness) sont obligatoires",
+        "name": "storage-provisioner",
+        "namespace": "kube-system",
+        "version": "v1"
+      },
+      {
+        "enforcementAction": "deny",
+        "group": "",
+        "kind": "Pod",
+        "message": "Les probes (liveness/readiness) sont obligatoires",
+        "name": "kube-proxy-s46wr",
+        "namespace": "kube-system",
+        "version": "v1"
+      }
+    ]
+  }
+}
+{
+  "apiVersion": "constraints.gatekeeper.sh/v1beta1",
+  "kind": "K8sRequireProbes",
+  "metadata": {
+    "annotations": {
+      "kubectl.kubernetes.io/last-applied-configuration": "{\"apiVersion\":\"constraints.gatekeeper.sh/v1beta1\",\"kind\":\"K8sRequireProbes\",\"metadata\":{\"annotations\":{},\"name\":\"require-probes\"},\"spec\":{\"match\":{\"kinds\":[{\"apiGroups\":[\"\"],\"kinds\":[\"Pod\"]}]}}}\n"
+    },
+    "creationTimestamp": "2025-08-08T13:00:44Z",
+    "generation": 1,
+    "name": "require-probes",
+    "resourceVersion": "5092",
+    "uid": "103fb1c5-54e6-426c-95c7-5e4c5344be7f"
+  },
+  "spec": {
+    "enforcementAction": "deny",
+    "match": {
+      "kinds": [
+        {
+          "apiGroups": [
+            ""
+          ],
+          "kinds": [
+            "Pod"
+          ]
+        }
+      ]
+    }
+  },
+  "status": {
+    "auditTimestamp": "2025-08-08T13:19:24Z",
+    "byPod": [
+      {
+        "constraintUID": "103fb1c5-54e6-426c-95c7-5e4c5344be7f",
+        "enforced": true,
+        "enforcementPointsStatus": [
+          {
+            "enforcementPoint": "vap.k8s.io",
+            "message": "K8sNativeValidation engine is missing",
+            "observedGeneration": 1,
+            "state": "error"
+          }
+        ],
+        "id": "gatekeeper-audit-65fffcf58b-4nj9t",
+        "observedGeneration": 1,
+        "operations": [
+          "audit",
+          "generate",
+          "mutation-status",
+          "status"
+        ]
+      },
+      {
+        "constraintUID": "103fb1c5-54e6-426c-95c7-5e4c5344be7f",
+        "enforced": true,
+        "id": "gatekeeper-controller-manager-b9d676cd7-f87h7",
+        "observedGeneration": 1,
+        "operations": [
+          "mutation-webhook",
+          "webhook"
+        ]
+      },
+      {
+        "constraintUID": "103fb1c5-54e6-426c-95c7-5e4c5344be7f",
+        "enforced": true,
+        "id": "gatekeeper-controller-manager-b9d676cd7-l2v7q",
+        "observedGeneration": 1,
+        "operations": [
+          "mutation-webhook",
+          "webhook"
+        ]
+      },
+      {
+        "constraintUID": "103fb1c5-54e6-426c-95c7-5e4c5344be7f",
+        "enforced": true,
+        "id": "gatekeeper-controller-manager-b9d676cd7-mrc4b",
+        "observedGeneration": 1,
+        "operations": [
+          "mutation-webhook",
+          "webhook"
+        ]
+      }
+    ],
+    "totalViolations": 2,
+    "violations": [
+      {
+        "enforcementAction": "deny",
+        "group": "",
+        "kind": "Pod",
+        "message": "Les probes (liveness/readiness) sont obligatoires",
+        "name": "storage-provisioner",
+        "namespace": "kube-system",
+        "version": "v1"
+      },
+      {
+        "enforcementAction": "deny",
+        "group": "",
+        "kind": "Pod",
+        "message": "Les probes (liveness/readiness) sont obligatoires",
+        "name": "kube-proxy-s46wr",
+        "namespace": "kube-system",
+        "version": "v1"
+      }
+    ]
+  }
+}
+{
+  "apiVersion": "constraints.gatekeeper.sh/v1beta1",
+  "kind": "K8sResourceLimits",
+  "metadata": {
+    "annotations": {
+      "kubectl.kubernetes.io/last-applied-configuration": "{\"apiVersion\":\"constraints.gatekeeper.sh/v1beta1\",\"kind\":\"K8sResourceLimits\",\"metadata\":{\"annotations\":{},\"name\":\"require-resource-limits\"},\"spec\":{\"match\":{\"kinds\":[{\"apiGroups\":[\"\"],\"kinds\":[\"Pod\"]}]}}}\n"
+    },
+    "creationTimestamp": "2025-08-08T13:00:44Z",
+    "generation": 1,
+    "name": "require-resource-limits",
+    "resourceVersion": "5097",
+    "uid": "a14cb829-fe2e-4885-af23-103ffeb66309"
+  },
+  "spec": {
+    "enforcementAction": "deny",
+    "match": {
+      "kinds": [
+        {
+          "apiGroups": [
+            ""
+          ],
+          "kinds": [
+            "Pod"
+          ]
+        }
+      ]
+    }
+  },
+  "status": {
+    "auditTimestamp": "2025-08-08T13:19:24Z",
+    "byPod": [
+      {
+        "constraintUID": "a14cb829-fe2e-4885-af23-103ffeb66309",
+        "enforced": true,
+        "enforcementPointsStatus": [
+          {
+            "enforcementPoint": "vap.k8s.io",
+            "message": "K8sNativeValidation engine is missing",
+            "observedGeneration": 1,
+            "state": "error"
+          }
+        ],
+        "id": "gatekeeper-audit-65fffcf58b-4nj9t",
+        "observedGeneration": 1,
+        "operations": [
+          "audit",
+          "generate",
+          "mutation-status",
+          "status"
+        ]
+      },
+      {
+        "constraintUID": "a14cb829-fe2e-4885-af23-103ffeb66309",
+        "enforced": true,
+        "id": "gatekeeper-controller-manager-b9d676cd7-f87h7",
+        "observedGeneration": 1,
+        "operations": [
+          "mutation-webhook",
+          "webhook"
+        ]
+      },
+      {
+        "constraintUID": "a14cb829-fe2e-4885-af23-103ffeb66309",
+        "enforced": true,
+        "id": "gatekeeper-controller-manager-b9d676cd7-l2v7q",
+        "observedGeneration": 1,
+        "operations": [
+          "mutation-webhook",
+          "webhook"
+        ]
+      },
+      {
+        "constraintUID": "a14cb829-fe2e-4885-af23-103ffeb66309",
+        "enforced": true,
+        "id": "gatekeeper-controller-manager-b9d676cd7-mrc4b",
+        "observedGeneration": 1,
+        "operations": [
+          "mutation-webhook",
+          "webhook"
+        ]
+      }
+    ],
+    "totalViolations": 6,
+    "violations": [
+      {
+        "enforcementAction": "deny",
+        "group": "",
+        "kind": "Pod",
+        "message": "Les limites de ressources (CPU/Memory) sont obligatoires",
+        "name": "storage-provisioner",
+        "namespace": "kube-system",
+        "version": "v1"
+      },
+      {
+        "enforcementAction": "deny",
+        "group": "",
+        "kind": "Pod",
+        "message": "Les limites de ressources (CPU/Memory) sont obligatoires",
+        "name": "kube-scheduler-minikube",
+        "namespace": "kube-system",
+        "version": "v1"
+      },
+      {
+        "enforcementAction": "deny",
+        "group": "",
+        "kind": "Pod",
+        "message": "Les limites de ressources (CPU/Memory) sont obligatoires",
+        "name": "kube-proxy-s46wr",
+        "namespace": "kube-system",
+        "version": "v1"
+      },
+      {
+        "enforcementAction": "deny",
+        "group": "",
+        "kind": "Pod",
+        "message": "Les limites de ressources (CPU/Memory) sont obligatoires",
+        "name": "kube-controller-manager-minikube",
+        "namespace": "kube-system",
+        "version": "v1"
+      },
+      {
+        "enforcementAction": "deny",
+        "group": "",
+        "kind": "Pod",
+        "message": "Les limites de ressources (CPU/Memory) sont obligatoires",
+        "name": "kube-apiserver-minikube",
+        "namespace": "kube-system",
+        "version": "v1"
+      },
+      {
+        "enforcementAction": "deny",
+        "group": "",
+        "kind": "Pod",
+        "message": "Les limites de ressources (CPU/Memory) sont obligatoires",
+        "name": "etcd-minikube",
+        "namespace": "kube-system",
+        "version": "v1"
+      }
+    ]
+  }
+}
+{
+  "apiVersion": "constraints.gatekeeper.sh/v1beta1",
+  "kind": "K8sResourceLimits",
+  "metadata": {
+    "annotations": {
+      "kubectl.kubernetes.io/last-applied-configuration": "{\"apiVersion\":\"constraints.gatekeeper.sh/v1beta1\",\"kind\":\"K8sResourceLimits\",\"metadata\":{\"annotations\":{},\"name\":\"require-resource-limits\"},\"spec\":{\"match\":{\"kinds\":[{\"apiGroups\":[\"\"],\"kinds\":[\"Pod\"]}]}}}\n"
+    },
+    "creationTimestamp": "2025-08-08T13:00:44Z",
+    "generation": 1,
+    "name": "require-resource-limits",
+    "resourceVersion": "5097",
+    "uid": "a14cb829-fe2e-4885-af23-103ffeb66309"
+  },
+  "spec": {
+    "enforcementAction": "deny",
+    "match": {
+      "kinds": [
+        {
+          "apiGroups": [
+            ""
+          ],
+          "kinds": [
+            "Pod"
+          ]
+        }
+      ]
+    }
+  },
+  "status": {
+    "auditTimestamp": "2025-08-08T13:19:24Z",
+    "byPod": [
+      {
+        "constraintUID": "a14cb829-fe2e-4885-af23-103ffeb66309",
+        "enforced": true,
+        "enforcementPointsStatus": [
+          {
+            "enforcementPoint": "vap.k8s.io",
+            "message": "K8sNativeValidation engine is missing",
+            "observedGeneration": 1,
+            "state": "error"
+          }
+        ],
+        "id": "gatekeeper-audit-65fffcf58b-4nj9t",
+        "observedGeneration": 1,
+        "operations": [
+          "audit",
+          "generate",
+          "mutation-status",
+          "status"
+        ]
+      },
+      {
+        "constraintUID": "a14cb829-fe2e-4885-af23-103ffeb66309",
+        "enforced": true,
+        "id": "gatekeeper-controller-manager-b9d676cd7-f87h7",
+        "observedGeneration": 1,
+        "operations": [
+          "mutation-webhook",
+          "webhook"
+        ]
+      },
+      {
+        "constraintUID": "a14cb829-fe2e-4885-af23-103ffeb66309",
+        "enforced": true,
+        "id": "gatekeeper-controller-manager-b9d676cd7-l2v7q",
+        "observedGeneration": 1,
+        "operations": [
+          "mutation-webhook",
+          "webhook"
+        ]
+      },
+      {
+        "constraintUID": "a14cb829-fe2e-4885-af23-103ffeb66309",
+        "enforced": true,
+        "id": "gatekeeper-controller-manager-b9d676cd7-mrc4b",
+        "observedGeneration": 1,
+        "operations": [
+          "mutation-webhook",
+          "webhook"
+        ]
+      }
+    ],
+    "totalViolations": 6,
+    "violations": [
+      {
+        "enforcementAction": "deny",
+        "group": "",
+        "kind": "Pod",
+        "message": "Les limites de ressources (CPU/Memory) sont obligatoires",
+        "name": "storage-provisioner",
+        "namespace": "kube-system",
+        "version": "v1"
+      },
+      {
+        "enforcementAction": "deny",
+        "group": "",
+        "kind": "Pod",
+        "message": "Les limites de ressources (CPU/Memory) sont obligatoires",
+        "name": "kube-scheduler-minikube",
+        "namespace": "kube-system",
+        "version": "v1"
+      },
+      {
+        "enforcementAction": "deny",
+        "group": "",
+        "kind": "Pod",
+        "message": "Les limites de ressources (CPU/Memory) sont obligatoires",
+        "name": "kube-proxy-s46wr",
+        "namespace": "kube-system",
+        "version": "v1"
+      },
+      {
+        "enforcementAction": "deny",
+        "group": "",
+        "kind": "Pod",
+        "message": "Les limites de ressources (CPU/Memory) sont obligatoires",
+        "name": "kube-controller-manager-minikube",
+        "namespace": "kube-system",
+        "version": "v1"
+      },
+      {
+        "enforcementAction": "deny",
+        "group": "",
+        "kind": "Pod",
+        "message": "Les limites de ressources (CPU/Memory) sont obligatoires",
+        "name": "kube-apiserver-minikube",
+        "namespace": "kube-system",
+        "version": "v1"
+      },
+      {
+        "enforcementAction": "deny",
+        "group": "",
+        "kind": "Pod",
+        "message": "Les limites de ressources (CPU/Memory) sont obligatoires",
+        "name": "etcd-minikube",
+        "namespace": "kube-system",
+        "version": "v1"
+      }
+    ]
+  }
+}
+{
+  "apiVersion": "constraints.gatekeeper.sh/v1beta1",
+  "kind": "K8sResourceLimits",
+  "metadata": {
+    "annotations": {
+      "kubectl.kubernetes.io/last-applied-configuration": "{\"apiVersion\":\"constraints.gatekeeper.sh/v1beta1\",\"kind\":\"K8sResourceLimits\",\"metadata\":{\"annotations\":{},\"name\":\"require-resource-limits\"},\"spec\":{\"match\":{\"kinds\":[{\"apiGroups\":[\"\"],\"kinds\":[\"Pod\"]}]}}}\n"
+    },
+    "creationTimestamp": "2025-08-08T13:00:44Z",
+    "generation": 1,
+    "name": "require-resource-limits",
+    "resourceVersion": "5097",
+    "uid": "a14cb829-fe2e-4885-af23-103ffeb66309"
+  },
+  "spec": {
+    "enforcementAction": "deny",
+    "match": {
+      "kinds": [
+        {
+          "apiGroups": [
+            ""
+          ],
+          "kinds": [
+            "Pod"
+          ]
+        }
+      ]
+    }
+  },
+  "status": {
+    "auditTimestamp": "2025-08-08T13:19:24Z",
+    "byPod": [
+      {
+        "constraintUID": "a14cb829-fe2e-4885-af23-103ffeb66309",
+        "enforced": true,
+        "enforcementPointsStatus": [
+          {
+            "enforcementPoint": "vap.k8s.io",
+            "message": "K8sNativeValidation engine is missing",
+            "observedGeneration": 1,
+            "state": "error"
+          }
+        ],
+        "id": "gatekeeper-audit-65fffcf58b-4nj9t",
+        "observedGeneration": 1,
+        "operations": [
+          "audit",
+          "generate",
+          "mutation-status",
+          "status"
+        ]
+      },
+      {
+        "constraintUID": "a14cb829-fe2e-4885-af23-103ffeb66309",
+        "enforced": true,
+        "id": "gatekeeper-controller-manager-b9d676cd7-f87h7",
+        "observedGeneration": 1,
+        "operations": [
+          "mutation-webhook",
+          "webhook"
+        ]
+      },
+      {
+        "constraintUID": "a14cb829-fe2e-4885-af23-103ffeb66309",
+        "enforced": true,
+        "id": "gatekeeper-controller-manager-b9d676cd7-l2v7q",
+        "observedGeneration": 1,
+        "operations": [
+          "mutation-webhook",
+          "webhook"
+        ]
+      },
+      {
+        "constraintUID": "a14cb829-fe2e-4885-af23-103ffeb66309",
+        "enforced": true,
+        "id": "gatekeeper-controller-manager-b9d676cd7-mrc4b",
+        "observedGeneration": 1,
+        "operations": [
+          "mutation-webhook",
+          "webhook"
+        ]
+      }
+    ],
+    "totalViolations": 6,
+    "violations": [
+      {
+        "enforcementAction": "deny",
+        "group": "",
+        "kind": "Pod",
+        "message": "Les limites de ressources (CPU/Memory) sont obligatoires",
+        "name": "storage-provisioner",
+        "namespace": "kube-system",
+        "version": "v1"
+      },
+      {
+        "enforcementAction": "deny",
+        "group": "",
+        "kind": "Pod",
+        "message": "Les limites de ressources (CPU/Memory) sont obligatoires",
+        "name": "kube-scheduler-minikube",
+        "namespace": "kube-system",
+        "version": "v1"
+      },
+      {
+        "enforcementAction": "deny",
+        "group": "",
+        "kind": "Pod",
+        "message": "Les limites de ressources (CPU/Memory) sont obligatoires",
+        "name": "kube-proxy-s46wr",
+        "namespace": "kube-system",
+        "version": "v1"
+      },
+      {
+        "enforcementAction": "deny",
+        "group": "",
+        "kind": "Pod",
+        "message": "Les limites de ressources (CPU/Memory) sont obligatoires",
+        "name": "kube-controller-manager-minikube",
+        "namespace": "kube-system",
+        "version": "v1"
+      },
+      {
+        "enforcementAction": "deny",
+        "group": "",
+        "kind": "Pod",
+        "message": "Les limites de ressources (CPU/Memory) sont obligatoires",
+        "name": "kube-apiserver-minikube",
+        "namespace": "kube-system",
+        "version": "v1"
+      },
+      {
+        "enforcementAction": "deny",
+        "group": "",
+        "kind": "Pod",
+        "message": "Les limites de ressources (CPU/Memory) sont obligatoires",
+        "name": "etcd-minikube",
+        "namespace": "kube-system",
+        "version": "v1"
+      }
+    ]
+  }
+}
+{
+  "apiVersion": "constraints.gatekeeper.sh/v1beta1",
+  "kind": "K8sResourceLimits",
+  "metadata": {
+    "annotations": {
+      "kubectl.kubernetes.io/last-applied-configuration": "{\"apiVersion\":\"constraints.gatekeeper.sh/v1beta1\",\"kind\":\"K8sResourceLimits\",\"metadata\":{\"annotations\":{},\"name\":\"require-resource-limits\"},\"spec\":{\"match\":{\"kinds\":[{\"apiGroups\":[\"\"],\"kinds\":[\"Pod\"]}]}}}\n"
+    },
+    "creationTimestamp": "2025-08-08T13:00:44Z",
+    "generation": 1,
+    "name": "require-resource-limits",
+    "resourceVersion": "5097",
+    "uid": "a14cb829-fe2e-4885-af23-103ffeb66309"
+  },
+  "spec": {
+    "enforcementAction": "deny",
+    "match": {
+      "kinds": [
+        {
+          "apiGroups": [
+            ""
+          ],
+          "kinds": [
+            "Pod"
+          ]
+        }
+      ]
+    }
+  },
+  "status": {
+    "auditTimestamp": "2025-08-08T13:19:24Z",
+    "byPod": [
+      {
+        "constraintUID": "a14cb829-fe2e-4885-af23-103ffeb66309",
+        "enforced": true,
+        "enforcementPointsStatus": [
+          {
+            "enforcementPoint": "vap.k8s.io",
+            "message": "K8sNativeValidation engine is missing",
+            "observedGeneration": 1,
+            "state": "error"
+          }
+        ],
+        "id": "gatekeeper-audit-65fffcf58b-4nj9t",
+        "observedGeneration": 1,
+        "operations": [
+          "audit",
+          "generate",
+          "mutation-status",
+          "status"
+        ]
+      },
+      {
+        "constraintUID": "a14cb829-fe2e-4885-af23-103ffeb66309",
+        "enforced": true,
+        "id": "gatekeeper-controller-manager-b9d676cd7-f87h7",
+        "observedGeneration": 1,
+        "operations": [
+          "mutation-webhook",
+          "webhook"
+        ]
+      },
+      {
+        "constraintUID": "a14cb829-fe2e-4885-af23-103ffeb66309",
+        "enforced": true,
+        "id": "gatekeeper-controller-manager-b9d676cd7-l2v7q",
+        "observedGeneration": 1,
+        "operations": [
+          "mutation-webhook",
+          "webhook"
+        ]
+      },
+      {
+        "constraintUID": "a14cb829-fe2e-4885-af23-103ffeb66309",
+        "enforced": true,
+        "id": "gatekeeper-controller-manager-b9d676cd7-mrc4b",
+        "observedGeneration": 1,
+        "operations": [
+          "mutation-webhook",
+          "webhook"
+        ]
+      }
+    ],
+    "totalViolations": 6,
+    "violations": [
+      {
+        "enforcementAction": "deny",
+        "group": "",
+        "kind": "Pod",
+        "message": "Les limites de ressources (CPU/Memory) sont obligatoires",
+        "name": "storage-provisioner",
+        "namespace": "kube-system",
+        "version": "v1"
+      },
+      {
+        "enforcementAction": "deny",
+        "group": "",
+        "kind": "Pod",
+        "message": "Les limites de ressources (CPU/Memory) sont obligatoires",
+        "name": "kube-scheduler-minikube",
+        "namespace": "kube-system",
+        "version": "v1"
+      },
+      {
+        "enforcementAction": "deny",
+        "group": "",
+        "kind": "Pod",
+        "message": "Les limites de ressources (CPU/Memory) sont obligatoires",
+        "name": "kube-proxy-s46wr",
+        "namespace": "kube-system",
+        "version": "v1"
+      },
+      {
+        "enforcementAction": "deny",
+        "group": "",
+        "kind": "Pod",
+        "message": "Les limites de ressources (CPU/Memory) sont obligatoires",
+        "name": "kube-controller-manager-minikube",
+        "namespace": "kube-system",
+        "version": "v1"
+      },
+      {
+        "enforcementAction": "deny",
+        "group": "",
+        "kind": "Pod",
+        "message": "Les limites de ressources (CPU/Memory) sont obligatoires",
+        "name": "kube-apiserver-minikube",
+        "namespace": "kube-system",
+        "version": "v1"
+      },
+      {
+        "enforcementAction": "deny",
+        "group": "",
+        "kind": "Pod",
+        "message": "Les limites de ressources (CPU/Memory) sont obligatoires",
+        "name": "etcd-minikube",
+        "namespace": "kube-system",
+        "version": "v1"
+      }
+    ]
+  }
+}
+{
+  "apiVersion": "constraints.gatekeeper.sh/v1beta1",
+  "kind": "K8sResourceLimits",
+  "metadata": {
+    "annotations": {
+      "kubectl.kubernetes.io/last-applied-configuration": "{\"apiVersion\":\"constraints.gatekeeper.sh/v1beta1\",\"kind\":\"K8sResourceLimits\",\"metadata\":{\"annotations\":{},\"name\":\"require-resource-limits\"},\"spec\":{\"match\":{\"kinds\":[{\"apiGroups\":[\"\"],\"kinds\":[\"Pod\"]}]}}}\n"
+    },
+    "creationTimestamp": "2025-08-08T13:00:44Z",
+    "generation": 1,
+    "name": "require-resource-limits",
+    "resourceVersion": "5097",
+    "uid": "a14cb829-fe2e-4885-af23-103ffeb66309"
+  },
+  "spec": {
+    "enforcementAction": "deny",
+    "match": {
+      "kinds": [
+        {
+          "apiGroups": [
+            ""
+          ],
+          "kinds": [
+            "Pod"
+          ]
+        }
+      ]
+    }
+  },
+  "status": {
+    "auditTimestamp": "2025-08-08T13:19:24Z",
+    "byPod": [
+      {
+        "constraintUID": "a14cb829-fe2e-4885-af23-103ffeb66309",
+        "enforced": true,
+        "enforcementPointsStatus": [
+          {
+            "enforcementPoint": "vap.k8s.io",
+            "message": "K8sNativeValidation engine is missing",
+            "observedGeneration": 1,
+            "state": "error"
+          }
+        ],
+        "id": "gatekeeper-audit-65fffcf58b-4nj9t",
+        "observedGeneration": 1,
+        "operations": [
+          "audit",
+          "generate",
+          "mutation-status",
+          "status"
+        ]
+      },
+      {
+        "constraintUID": "a14cb829-fe2e-4885-af23-103ffeb66309",
+        "enforced": true,
+        "id": "gatekeeper-controller-manager-b9d676cd7-f87h7",
+        "observedGeneration": 1,
+        "operations": [
+          "mutation-webhook",
+          "webhook"
+        ]
+      },
+      {
+        "constraintUID": "a14cb829-fe2e-4885-af23-103ffeb66309",
+        "enforced": true,
+        "id": "gatekeeper-controller-manager-b9d676cd7-l2v7q",
+        "observedGeneration": 1,
+        "operations": [
+          "mutation-webhook",
+          "webhook"
+        ]
+      },
+      {
+        "constraintUID": "a14cb829-fe2e-4885-af23-103ffeb66309",
+        "enforced": true,
+        "id": "gatekeeper-controller-manager-b9d676cd7-mrc4b",
+        "observedGeneration": 1,
+        "operations": [
+          "mutation-webhook",
+          "webhook"
+        ]
+      }
+    ],
+    "totalViolations": 6,
+    "violations": [
+      {
+        "enforcementAction": "deny",
+        "group": "",
+        "kind": "Pod",
+        "message": "Les limites de ressources (CPU/Memory) sont obligatoires",
+        "name": "storage-provisioner",
+        "namespace": "kube-system",
+        "version": "v1"
+      },
+      {
+        "enforcementAction": "deny",
+        "group": "",
+        "kind": "Pod",
+        "message": "Les limites de ressources (CPU/Memory) sont obligatoires",
+        "name": "kube-scheduler-minikube",
+        "namespace": "kube-system",
+        "version": "v1"
+      },
+      {
+        "enforcementAction": "deny",
+        "group": "",
+        "kind": "Pod",
+        "message": "Les limites de ressources (CPU/Memory) sont obligatoires",
+        "name": "kube-proxy-s46wr",
+        "namespace": "kube-system",
+        "version": "v1"
+      },
+      {
+        "enforcementAction": "deny",
+        "group": "",
+        "kind": "Pod",
+        "message": "Les limites de ressources (CPU/Memory) sont obligatoires",
+        "name": "kube-controller-manager-minikube",
+        "namespace": "kube-system",
+        "version": "v1"
+      },
+      {
+        "enforcementAction": "deny",
+        "group": "",
+        "kind": "Pod",
+        "message": "Les limites de ressources (CPU/Memory) sont obligatoires",
+        "name": "kube-apiserver-minikube",
+        "namespace": "kube-system",
+        "version": "v1"
+      },
+      {
+        "enforcementAction": "deny",
+        "group": "",
+        "kind": "Pod",
+        "message": "Les limites de ressources (CPU/Memory) sont obligatoires",
+        "name": "etcd-minikube",
+        "namespace": "kube-system",
+        "version": "v1"
+      }
+    ]
+  }
+}
+{
+  "apiVersion": "constraints.gatekeeper.sh/v1beta1",
+  "kind": "K8sResourceLimits",
+  "metadata": {
+    "annotations": {
+      "kubectl.kubernetes.io/last-applied-configuration": "{\"apiVersion\":\"constraints.gatekeeper.sh/v1beta1\",\"kind\":\"K8sResourceLimits\",\"metadata\":{\"annotations\":{},\"name\":\"require-resource-limits\"},\"spec\":{\"match\":{\"kinds\":[{\"apiGroups\":[\"\"],\"kinds\":[\"Pod\"]}]}}}\n"
+    },
+    "creationTimestamp": "2025-08-08T13:00:44Z",
+    "generation": 1,
+    "name": "require-resource-limits",
+    "resourceVersion": "5097",
+    "uid": "a14cb829-fe2e-4885-af23-103ffeb66309"
+  },
+  "spec": {
+    "enforcementAction": "deny",
+    "match": {
+      "kinds": [
+        {
+          "apiGroups": [
+            ""
+          ],
+          "kinds": [
+            "Pod"
+          ]
+        }
+      ]
+    }
+  },
+  "status": {
+    "auditTimestamp": "2025-08-08T13:19:24Z",
+    "byPod": [
+      {
+        "constraintUID": "a14cb829-fe2e-4885-af23-103ffeb66309",
+        "enforced": true,
+        "enforcementPointsStatus": [
+          {
+            "enforcementPoint": "vap.k8s.io",
+            "message": "K8sNativeValidation engine is missing",
+            "observedGeneration": 1,
+            "state": "error"
+          }
+        ],
+        "id": "gatekeeper-audit-65fffcf58b-4nj9t",
+        "observedGeneration": 1,
+        "operations": [
+          "audit",
+          "generate",
+          "mutation-status",
+          "status"
+        ]
+      },
+      {
+        "constraintUID": "a14cb829-fe2e-4885-af23-103ffeb66309",
+        "enforced": true,
+        "id": "gatekeeper-controller-manager-b9d676cd7-f87h7",
+        "observedGeneration": 1,
+        "operations": [
+          "mutation-webhook",
+          "webhook"
+        ]
+      },
+      {
+        "constraintUID": "a14cb829-fe2e-4885-af23-103ffeb66309",
+        "enforced": true,
+        "id": "gatekeeper-controller-manager-b9d676cd7-l2v7q",
+        "observedGeneration": 1,
+        "operations": [
+          "mutation-webhook",
+          "webhook"
+        ]
+      },
+      {
+        "constraintUID": "a14cb829-fe2e-4885-af23-103ffeb66309",
+        "enforced": true,
+        "id": "gatekeeper-controller-manager-b9d676cd7-mrc4b",
+        "observedGeneration": 1,
+        "operations": [
+          "mutation-webhook",
+          "webhook"
+        ]
+      }
+    ],
+    "totalViolations": 6,
+    "violations": [
+      {
+        "enforcementAction": "deny",
+        "group": "",
+        "kind": "Pod",
+        "message": "Les limites de ressources (CPU/Memory) sont obligatoires",
+        "name": "storage-provisioner",
+        "namespace": "kube-system",
+        "version": "v1"
+      },
+      {
+        "enforcementAction": "deny",
+        "group": "",
+        "kind": "Pod",
+        "message": "Les limites de ressources (CPU/Memory) sont obligatoires",
+        "name": "kube-scheduler-minikube",
+        "namespace": "kube-system",
+        "version": "v1"
+      },
+      {
+        "enforcementAction": "deny",
+        "group": "",
+        "kind": "Pod",
+        "message": "Les limites de ressources (CPU/Memory) sont obligatoires",
+        "name": "kube-proxy-s46wr",
+        "namespace": "kube-system",
+        "version": "v1"
+      },
+      {
+        "enforcementAction": "deny",
+        "group": "",
+        "kind": "Pod",
+        "message": "Les limites de ressources (CPU/Memory) sont obligatoires",
+        "name": "kube-controller-manager-minikube",
+        "namespace": "kube-system",
+        "version": "v1"
+      },
+      {
+        "enforcementAction": "deny",
+        "group": "",
+        "kind": "Pod",
+        "message": "Les limites de ressources (CPU/Memory) sont obligatoires",
+        "name": "kube-apiserver-minikube",
+        "namespace": "kube-system",
+        "version": "v1"
+      },
+      {
+        "enforcementAction": "deny",
+        "group": "",
+        "kind": "Pod",
+        "message": "Les limites de ressources (CPU/Memory) sont obligatoires",
+        "name": "etcd-minikube",
+        "namespace": "kube-system",
+        "version": "v1"
+      }
+    ]
+  }
+}
+{
+  "apiVersion": "constraints.gatekeeper.sh/v1beta1",
+  "kind": "K8sSecretsBase64",
+  "metadata": {
+    "annotations": {
+      "kubectl.kubernetes.io/last-applied-configuration": "{\"apiVersion\":\"constraints.gatekeeper.sh/v1beta1\",\"kind\":\"K8sSecretsBase64\",\"metadata\":{\"annotations\":{},\"name\":\"enforce-secret-policy\"},\"spec\":{\"match\":{\"kinds\":[{\"apiGroups\":[\"\"],\"kinds\":[\"Secret\"]}]}}}\n"
+    },
+    "creationTimestamp": "2025-08-08T13:00:43Z",
+    "generation": 1,
+    "name": "enforce-secret-policy",
+    "resourceVersion": "5099",
+    "uid": "151b5e4b-d2a9-4163-b665-8a2691eab926"
+  },
+  "spec": {
+    "enforcementAction": "deny",
+    "match": {
+      "kinds": [
+        {
+          "apiGroups": [
+            ""
+          ],
+          "kinds": [
+            "Secret"
+          ]
+        }
+      ]
+    }
+  },
+  "status": {
+    "auditTimestamp": "2025-08-08T13:19:24Z",
+    "byPod": [
+      {
+        "constraintUID": "151b5e4b-d2a9-4163-b665-8a2691eab926",
+        "enforced": true,
+        "enforcementPointsStatus": [
+          {
+            "enforcementPoint": "vap.k8s.io",
+            "message": "K8sNativeValidation engine is missing",
+            "observedGeneration": 1,
+            "state": "error"
+          }
+        ],
+        "id": "gatekeeper-audit-65fffcf58b-4nj9t",
+        "observedGeneration": 1,
+        "operations": [
+          "audit",
+          "generate",
+          "mutation-status",
+          "status"
+        ]
+      },
+      {
+        "constraintUID": "151b5e4b-d2a9-4163-b665-8a2691eab926",
+        "enforced": true,
+        "id": "gatekeeper-controller-manager-b9d676cd7-f87h7",
+        "observedGeneration": 1,
+        "operations": [
+          "mutation-webhook",
+          "webhook"
+        ]
+      },
+      {
+        "constraintUID": "151b5e4b-d2a9-4163-b665-8a2691eab926",
+        "enforced": true,
+        "id": "gatekeeper-controller-manager-b9d676cd7-l2v7q",
+        "observedGeneration": 1,
+        "operations": [
+          "mutation-webhook",
+          "webhook"
+        ]
+      },
+      {
+        "constraintUID": "151b5e4b-d2a9-4163-b665-8a2691eab926",
+        "enforced": true,
+        "id": "gatekeeper-controller-manager-b9d676cd7-mrc4b",
+        "observedGeneration": 1,
+        "operations": [
+          "mutation-webhook",
+          "webhook"
+        ]
+      }
+    ],
+    "totalViolations": 4,
+    "violations": [
+      {
+        "enforcementAction": "deny",
+        "group": "",
+        "kind": "Secret",
+        "message": "Annotation 'security.kubernetes.io/encrypted' manquante",
+        "name": "bootstrap-token-cemjz0",
+        "namespace": "kube-system",
+        "version": "v1"
+      },
+      {
+        "enforcementAction": "deny",
+        "group": "",
+        "kind": "Secret",
+        "message": "Annotation 'rotation-period' manquante (ex: '30d')",
+        "name": "bootstrap-token-cemjz0",
+        "namespace": "kube-system",
+        "version": "v1"
+      },
+      {
+        "enforcementAction": "deny",
+        "group": "",
+        "kind": "Secret",
+        "message": "Annotation 'security.kubernetes.io/encrypted' manquante",
+        "name": "gatekeeper-webhook-server-cert",
+        "namespace": "gatekeeper-system",
+        "version": "v1"
+      },
+      {
+        "enforcementAction": "deny",
+        "group": "",
+        "kind": "Secret",
+        "message": "Annotation 'rotation-period' manquante (ex: '30d')",
+        "name": "gatekeeper-webhook-server-cert",
+        "namespace": "gatekeeper-system",
+        "version": "v1"
+      }
+    ]
+  }
+}
+{
+  "apiVersion": "constraints.gatekeeper.sh/v1beta1",
+  "kind": "K8sSecretsBase64",
+  "metadata": {
+    "annotations": {
+      "kubectl.kubernetes.io/last-applied-configuration": "{\"apiVersion\":\"constraints.gatekeeper.sh/v1beta1\",\"kind\":\"K8sSecretsBase64\",\"metadata\":{\"annotations\":{},\"name\":\"enforce-secret-policy\"},\"spec\":{\"match\":{\"kinds\":[{\"apiGroups\":[\"\"],\"kinds\":[\"Secret\"]}]}}}\n"
+    },
+    "creationTimestamp": "2025-08-08T13:00:43Z",
+    "generation": 1,
+    "name": "enforce-secret-policy",
+    "resourceVersion": "5099",
+    "uid": "151b5e4b-d2a9-4163-b665-8a2691eab926"
+  },
+  "spec": {
+    "enforcementAction": "deny",
+    "match": {
+      "kinds": [
+        {
+          "apiGroups": [
+            ""
+          ],
+          "kinds": [
+            "Secret"
+          ]
+        }
+      ]
+    }
+  },
+  "status": {
+    "auditTimestamp": "2025-08-08T13:19:24Z",
+    "byPod": [
+      {
+        "constraintUID": "151b5e4b-d2a9-4163-b665-8a2691eab926",
+        "enforced": true,
+        "enforcementPointsStatus": [
+          {
+            "enforcementPoint": "vap.k8s.io",
+            "message": "K8sNativeValidation engine is missing",
+            "observedGeneration": 1,
+            "state": "error"
+          }
+        ],
+        "id": "gatekeeper-audit-65fffcf58b-4nj9t",
+        "observedGeneration": 1,
+        "operations": [
+          "audit",
+          "generate",
+          "mutation-status",
+          "status"
+        ]
+      },
+      {
+        "constraintUID": "151b5e4b-d2a9-4163-b665-8a2691eab926",
+        "enforced": true,
+        "id": "gatekeeper-controller-manager-b9d676cd7-f87h7",
+        "observedGeneration": 1,
+        "operations": [
+          "mutation-webhook",
+          "webhook"
+        ]
+      },
+      {
+        "constraintUID": "151b5e4b-d2a9-4163-b665-8a2691eab926",
+        "enforced": true,
+        "id": "gatekeeper-controller-manager-b9d676cd7-l2v7q",
+        "observedGeneration": 1,
+        "operations": [
+          "mutation-webhook",
+          "webhook"
+        ]
+      },
+      {
+        "constraintUID": "151b5e4b-d2a9-4163-b665-8a2691eab926",
+        "enforced": true,
+        "id": "gatekeeper-controller-manager-b9d676cd7-mrc4b",
+        "observedGeneration": 1,
+        "operations": [
+          "mutation-webhook",
+          "webhook"
+        ]
+      }
+    ],
+    "totalViolations": 4,
+    "violations": [
+      {
+        "enforcementAction": "deny",
+        "group": "",
+        "kind": "Secret",
+        "message": "Annotation 'security.kubernetes.io/encrypted' manquante",
+        "name": "bootstrap-token-cemjz0",
+        "namespace": "kube-system",
+        "version": "v1"
+      },
+      {
+        "enforcementAction": "deny",
+        "group": "",
+        "kind": "Secret",
+        "message": "Annotation 'rotation-period' manquante (ex: '30d')",
+        "name": "bootstrap-token-cemjz0",
+        "namespace": "kube-system",
+        "version": "v1"
+      },
+      {
+        "enforcementAction": "deny",
+        "group": "",
+        "kind": "Secret",
+        "message": "Annotation 'security.kubernetes.io/encrypted' manquante",
+        "name": "gatekeeper-webhook-server-cert",
+        "namespace": "gatekeeper-system",
+        "version": "v1"
+      },
+      {
+        "enforcementAction": "deny",
+        "group": "",
+        "kind": "Secret",
+        "message": "Annotation 'rotation-period' manquante (ex: '30d')",
+        "name": "gatekeeper-webhook-server-cert",
+        "namespace": "gatekeeper-system",
+        "version": "v1"
+      }
+    ]
+  }
+}
+{
+  "apiVersion": "constraints.gatekeeper.sh/v1beta1",
+  "kind": "K8sSecretsBase64",
+  "metadata": {
+    "annotations": {
+      "kubectl.kubernetes.io/last-applied-configuration": "{\"apiVersion\":\"constraints.gatekeeper.sh/v1beta1\",\"kind\":\"K8sSecretsBase64\",\"metadata\":{\"annotations\":{},\"name\":\"enforce-secret-policy\"},\"spec\":{\"match\":{\"kinds\":[{\"apiGroups\":[\"\"],\"kinds\":[\"Secret\"]}]}}}\n"
+    },
+    "creationTimestamp": "2025-08-08T13:00:43Z",
+    "generation": 1,
+    "name": "enforce-secret-policy",
+    "resourceVersion": "5099",
+    "uid": "151b5e4b-d2a9-4163-b665-8a2691eab926"
+  },
+  "spec": {
+    "enforcementAction": "deny",
+    "match": {
+      "kinds": [
+        {
+          "apiGroups": [
+            ""
+          ],
+          "kinds": [
+            "Secret"
+          ]
+        }
+      ]
+    }
+  },
+  "status": {
+    "auditTimestamp": "2025-08-08T13:19:24Z",
+    "byPod": [
+      {
+        "constraintUID": "151b5e4b-d2a9-4163-b665-8a2691eab926",
+        "enforced": true,
+        "enforcementPointsStatus": [
+          {
+            "enforcementPoint": "vap.k8s.io",
+            "message": "K8sNativeValidation engine is missing",
+            "observedGeneration": 1,
+            "state": "error"
+          }
+        ],
+        "id": "gatekeeper-audit-65fffcf58b-4nj9t",
+        "observedGeneration": 1,
+        "operations": [
+          "audit",
+          "generate",
+          "mutation-status",
+          "status"
+        ]
+      },
+      {
+        "constraintUID": "151b5e4b-d2a9-4163-b665-8a2691eab926",
+        "enforced": true,
+        "id": "gatekeeper-controller-manager-b9d676cd7-f87h7",
+        "observedGeneration": 1,
+        "operations": [
+          "mutation-webhook",
+          "webhook"
+        ]
+      },
+      {
+        "constraintUID": "151b5e4b-d2a9-4163-b665-8a2691eab926",
+        "enforced": true,
+        "id": "gatekeeper-controller-manager-b9d676cd7-l2v7q",
+        "observedGeneration": 1,
+        "operations": [
+          "mutation-webhook",
+          "webhook"
+        ]
+      },
+      {
+        "constraintUID": "151b5e4b-d2a9-4163-b665-8a2691eab926",
+        "enforced": true,
+        "id": "gatekeeper-controller-manager-b9d676cd7-mrc4b",
+        "observedGeneration": 1,
+        "operations": [
+          "mutation-webhook",
+          "webhook"
+        ]
+      }
+    ],
+    "totalViolations": 4,
+    "violations": [
+      {
+        "enforcementAction": "deny",
+        "group": "",
+        "kind": "Secret",
+        "message": "Annotation 'security.kubernetes.io/encrypted' manquante",
+        "name": "bootstrap-token-cemjz0",
+        "namespace": "kube-system",
+        "version": "v1"
+      },
+      {
+        "enforcementAction": "deny",
+        "group": "",
+        "kind": "Secret",
+        "message": "Annotation 'rotation-period' manquante (ex: '30d')",
+        "name": "bootstrap-token-cemjz0",
+        "namespace": "kube-system",
+        "version": "v1"
+      },
+      {
+        "enforcementAction": "deny",
+        "group": "",
+        "kind": "Secret",
+        "message": "Annotation 'security.kubernetes.io/encrypted' manquante",
+        "name": "gatekeeper-webhook-server-cert",
+        "namespace": "gatekeeper-system",
+        "version": "v1"
+      },
+      {
+        "enforcementAction": "deny",
+        "group": "",
+        "kind": "Secret",
+        "message": "Annotation 'rotation-period' manquante (ex: '30d')",
+        "name": "gatekeeper-webhook-server-cert",
+        "namespace": "gatekeeper-system",
+        "version": "v1"
+      }
+    ]
+  }
+}
+{
+  "apiVersion": "constraints.gatekeeper.sh/v1beta1",
+  "kind": "K8sSecretsBase64",
+  "metadata": {
+    "annotations": {
+      "kubectl.kubernetes.io/last-applied-configuration": "{\"apiVersion\":\"constraints.gatekeeper.sh/v1beta1\",\"kind\":\"K8sSecretsBase64\",\"metadata\":{\"annotations\":{},\"name\":\"enforce-secret-policy\"},\"spec\":{\"match\":{\"kinds\":[{\"apiGroups\":[\"\"],\"kinds\":[\"Secret\"]}]}}}\n"
+    },
+    "creationTimestamp": "2025-08-08T13:00:43Z",
+    "generation": 1,
+    "name": "enforce-secret-policy",
+    "resourceVersion": "5099",
+    "uid": "151b5e4b-d2a9-4163-b665-8a2691eab926"
+  },
+  "spec": {
+    "enforcementAction": "deny",
+    "match": {
+      "kinds": [
+        {
+          "apiGroups": [
+            ""
+          ],
+          "kinds": [
+            "Secret"
+          ]
+        }
+      ]
+    }
+  },
+  "status": {
+    "auditTimestamp": "2025-08-08T13:19:24Z",
+    "byPod": [
+      {
+        "constraintUID": "151b5e4b-d2a9-4163-b665-8a2691eab926",
+        "enforced": true,
+        "enforcementPointsStatus": [
+          {
+            "enforcementPoint": "vap.k8s.io",
+            "message": "K8sNativeValidation engine is missing",
+            "observedGeneration": 1,
+            "state": "error"
+          }
+        ],
+        "id": "gatekeeper-audit-65fffcf58b-4nj9t",
+        "observedGeneration": 1,
+        "operations": [
+          "audit",
+          "generate",
+          "mutation-status",
+          "status"
+        ]
+      },
+      {
+        "constraintUID": "151b5e4b-d2a9-4163-b665-8a2691eab926",
+        "enforced": true,
+        "id": "gatekeeper-controller-manager-b9d676cd7-f87h7",
+        "observedGeneration": 1,
+        "operations": [
+          "mutation-webhook",
+          "webhook"
+        ]
+      },
+      {
+        "constraintUID": "151b5e4b-d2a9-4163-b665-8a2691eab926",
+        "enforced": true,
+        "id": "gatekeeper-controller-manager-b9d676cd7-l2v7q",
+        "observedGeneration": 1,
+        "operations": [
+          "mutation-webhook",
+          "webhook"
+        ]
+      },
+      {
+        "constraintUID": "151b5e4b-d2a9-4163-b665-8a2691eab926",
+        "enforced": true,
+        "id": "gatekeeper-controller-manager-b9d676cd7-mrc4b",
+        "observedGeneration": 1,
+        "operations": [
+          "mutation-webhook",
+          "webhook"
+        ]
+      }
+    ],
+    "totalViolations": 4,
+    "violations": [
+      {
+        "enforcementAction": "deny",
+        "group": "",
+        "kind": "Secret",
+        "message": "Annotation 'security.kubernetes.io/encrypted' manquante",
+        "name": "bootstrap-token-cemjz0",
+        "namespace": "kube-system",
+        "version": "v1"
+      },
+      {
+        "enforcementAction": "deny",
+        "group": "",
+        "kind": "Secret",
+        "message": "Annotation 'rotation-period' manquante (ex: '30d')",
+        "name": "bootstrap-token-cemjz0",
+        "namespace": "kube-system",
+        "version": "v1"
+      },
+      {
+        "enforcementAction": "deny",
+        "group": "",
+        "kind": "Secret",
+        "message": "Annotation 'security.kubernetes.io/encrypted' manquante",
+        "name": "gatekeeper-webhook-server-cert",
+        "namespace": "gatekeeper-system",
+        "version": "v1"
+      },
+      {
+        "enforcementAction": "deny",
+        "group": "",
+        "kind": "Secret",
+        "message": "Annotation 'rotation-period' manquante (ex: '30d')",
+        "name": "gatekeeper-webhook-server-cert",
+        "namespace": "gatekeeper-system",
+        "version": "v1"
+      }
+    ]
+  }
+}

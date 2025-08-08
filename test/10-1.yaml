@@ -1,0 +1,8 @@
+# bad-secret-1.yaml
+apiVersion: v1
+kind: Secret
+metadata:
+  name: raw-credentials
+type: Opaque
+data:
+  password: dG9wU2VjcmV0Cg==  # "topSecret" en base64 → Doit être bloqué

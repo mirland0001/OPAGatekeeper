@@ -1,0 +1,18 @@
+apiVersion: templates.gatekeeper.sh/v1beta1
+kind: ConstraintTemplate
+metadata:
+  name: k8sblockrootcontainers
+spec:
+  crd:
+    spec:
+      names:
+        kind: K8sBlockRootContainers
+  targets:
+    - target: admission.k8s.gatekeeper.sh
+      rego: |
+        package k8sblockrootcontainers
+        violation[{"msg": msg}] {
+          container := input.review.object.spec.containers[_]
+          container.securityContext.runAsUser == 0
+          msg := "Les conteneurs ne peuvent pas s'exécuter en root (UID 0)"
+        }

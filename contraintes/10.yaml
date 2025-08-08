@@ -1,0 +1,10 @@
+# secret-policy-constraint.yaml
+apiVersion: constraints.gatekeeper.sh/v1beta1
+kind: K8sSecretsBase64
+metadata:
+  name: enforce-secret-policy
+spec:
+  match:
+    kinds:
+      - apiGroups: [""]
+        kinds: ["Secret"]

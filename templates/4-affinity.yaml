@@ -1,0 +1,21 @@
+apiVersion: templates.gatekeeper.sh/v1beta1
+kind: ConstraintTemplate
+metadata:
+  name: k8sblockbadnodeaffinity
+spec:
+  crd:
+    spec:
+      names:
+        kind: K8sBlockBadNodeAffinity
+  targets:
+    - target: admission.k8s.gatekeeper.sh
+      rego: |
+        package k8sblockbadnodeaffinity
+        violation[{"msg": msg}] {
+          affinity := input.review.object.spec.affinity.nodeAffinity
+          term := affinity.requiredDuringSchedulingIgnoredDuringExecution.nodeSelectorTerms[_]
+          match := term.matchExpressions[_]
+          match.key == "experimental"
+          match.operator == "In"
+          msg := "L'affinité avec le node label 'experimental' est interdite"
+        }

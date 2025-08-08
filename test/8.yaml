@@ -1,0 +1,17 @@
+# bad-hostpath-pod.yaml
+apiVersion: v1
+kind: Pod
+metadata:
+  name: hostpath-violator
+spec:
+  containers:
+  - name: nginx
+    image: nginx
+    volumeMounts:
+    - name: host-data
+      mountPath: /host-data
+  volumes:
+  - name: host-data
+    hostPath:  # ❌ Violation
+      path: /etc/secrets
+      type: Directory

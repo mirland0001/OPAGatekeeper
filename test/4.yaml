@@ -1,0 +1,17 @@
+# bad-affinity-pod.yaml
+apiVersion: v1
+kind: Pod
+metadata:
+  name: experimental-runner
+spec:
+  affinity:
+    nodeAffinity:
+      requiredDuringSchedulingIgnoredDuringExecution:
+        nodeSelectorTerms:
+        - matchExpressions:
+          - key: experimental
+            operator: In
+            values: ["true"]  # Affinité interdite → Doit être bloqué
+  containers:
+  - name: alpine
+    image: alpine

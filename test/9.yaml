@@ -1,0 +1,10 @@
+# bad-no-probe-pod.yaml
+apiVersion: v1
+kind: Pod
+metadata:
+  name: zombie
+spec:
+  containers:
+  - name: ghost
+    image: nginx
+    # livenessProbe manquant → Doit être bloqué

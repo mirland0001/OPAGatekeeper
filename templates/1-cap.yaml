@@ -1,0 +1,20 @@
+apiVersion: templates.gatekeeper.sh/v1beta1
+kind: ConstraintTemplate
+metadata:
+  name: k8sblockdangerouscapabilities
+spec:
+  crd:
+    spec:
+      names:
+        kind: K8sBlockDangerousCapabilities
+  targets:
+    - target: admission.k8s.gatekeeper.sh
+      rego: |
+        package k8sblockdangerouscapabilities
+        dangerous_caps := {"NET_RAW", "SYS_ADMIN", "IPC_LOCK"}
+        violation[{"msg": msg}] {
+          container := input.review.object.spec.containers[_]
+          cap := container.securityContext.capabilities.add[_]
+          dangerous_caps[cap]
+          msg := sprintf("Capacité dangereuse '%v' interdite", [cap])
+        }

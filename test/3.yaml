@@ -1,0 +1,9 @@
+# bad-service.yaml
+apiVersion: v1
+kind: Service
+metadata:
+  name: insecure-svc
+  # Annotation manquante: security.kubernetes.io/enforce-tls → Doit être bloqué
+spec:
+  ports:
+  - port: 80
