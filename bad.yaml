@@ -1,0 +1,62 @@
+
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: bad-deployment
+  labels:
+    # Manque le label 'env' (viole K8sRequiredLabels)
+    app: nginx
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: nginx
+  template:
+    metadata:
+      labels:
+        app: nginx
+    spec:
+      affinity:
+        nodeAffinity:
+          requiredDuringSchedulingIgnoredDuringExecution:
+            nodeSelectorTerms:
+              - matchExpressions:
+                - key: experimental  # Viole K8sBlockBadNodeAffinity
+                  operator: In
+                  values: ["true"]
+      containers:
+        - name: nginx
+          image: nginx:latest
+          securityContext:
+            privileged: true  # Viole K8sBlockPrivileged
+            runAsUser: 0  # Viole K8sBlockRootContainers
+            capabilities:
+              add: ["NET_RAW", "SYS_ADMIN"]  # Viole K8sBlockDangerousCapabilities
+          # Pas de probes (viole K8sRequireProbes)
+          # Pas de limites de ressources (viole K8sResourceLimits)
+          volumeMounts:
+            - name: host-data
+              mountPath: /data
+      volumes:
+        - name: host-data
+          hostPath:  # Viole K8sBlockHostPath
+            path: /tmp
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: bad-service
+  # Pas d'annotation TLS (viole K8sRequiredServiceAnnotations)
+spec:
+  selector:
+    app: nginx
+  ports:
+    - port: 80
+---
+apiVersion: v1
+kind: Secret
+metadata:
+  name: bad-secret
+  # Pas d'annotation de chiffrement (viole KBSSecretsBase64)
+data:
+  password: QmFkUGFzc3dvcmQ=  # Base64 non chiffré (viole KBSSecretsBase64) 

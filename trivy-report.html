@@ -24,7 +24,7 @@
 </head>
 <body>
     <h1>Rapport de Scan Trivy</h1>
-    <p>Généré le Sun Aug 10 04:03:12 AM EDT 2025</p>
+    <p>Généré le Fri Aug 22 12:40:13 PM EDT 2025</p>
     
     <h2>Résumé</h2>
     <table>
@@ -38,7 +38,7 @@
             <th>Low</th>
         </tr>
         <tr>
-            <td>test/1.yaml</td>
+            <td>1.yaml</td>
             <td>kubernetes</td>
             <td>19</td>
             <td>0</td>
@@ -47,7 +47,7 @@
             <td>11</td>
         </tr>
         <tr>
-            <td>test/2.yaml</td>
+            <td>2.yaml</td>
             <td>kubernetes</td>
             <td>18</td>
             <td>0</td>
@@ -56,7 +56,7 @@
             <td>12</td>
         </tr>
         <tr>
-            <td>test/4.yaml</td>
+            <td>4.yaml</td>
             <td>kubernetes</td>
             <td>18</td>
             <td>0</td>
@@ -65,7 +65,7 @@
             <td>11</td>
         </tr>
         <tr>
-            <td>test/6.yaml</td>
+            <td>6.yaml</td>
             <td>kubernetes</td>
             <td>18</td>
             <td>0</td>
@@ -74,7 +74,7 @@
             <td>11</td>
         </tr>
         <tr>
-            <td>test/7.yaml</td>
+            <td>7.yaml</td>
             <td>kubernetes</td>
             <td>18</td>
             <td>0</td>
@@ -83,7 +83,7 @@
             <td>11</td>
         </tr>
         <tr>
-            <td>test/8.yaml</td>
+            <td>8.yaml</td>
             <td>kubernetes</td>
             <td>19</td>
             <td>0</td>
@@ -92,7 +92,7 @@
             <td>11</td>
         </tr>
         <tr>
-            <td>test/9.yaml</td>
+            <td>9.yaml</td>
             <td>kubernetes</td>
             <td>18</td>
             <td>0</td>
@@ -101,19 +101,19 @@
             <td>11</td>
         </tr>
     </table>
-    <h2>test/1.yaml (kubernetes)</h2>
+    <h2>1.yaml (kubernetes)</h2>
         <p>19 problèmes détectés</p>
-    <h2>test/2.yaml (kubernetes)</h2>
+    <h2>2.yaml (kubernetes)</h2>
         <p>18 problèmes détectés</p>
-    <h2>test/4.yaml (kubernetes)</h2>
+    <h2>4.yaml (kubernetes)</h2>
         <p>18 problèmes détectés</p>
-    <h2>test/6.yaml (kubernetes)</h2>
+    <h2>6.yaml (kubernetes)</h2>
         <p>18 problèmes détectés</p>
-    <h2>test/7.yaml (kubernetes)</h2>
+    <h2>7.yaml (kubernetes)</h2>
         <p>18 problèmes détectés</p>
-    <h2>test/8.yaml (kubernetes)</h2>
+    <h2>8.yaml (kubernetes)</h2>
         <p>19 problèmes détectés</p>
-    <h2>test/9.yaml (kubernetes)</h2>
+    <h2>9.yaml (kubernetes)</h2>
         <p>18 problèmes détectés</p>
 <div class="finding medium"><h3><span class="severity severity-medium">MEDIUM</span> Can elevate its own privileges (ID: KSV001)</h3><p>A program inside the container can elevate its own privileges and run as root, which might give the program control over the container and node.</p><p>Plus d\&#39;informations: <a href="https://avd.aquasec.com/misconfig/ksv001" target="_blank">https://avd.aquasec.com/misconfig/ksv001</a></p><div class="code-block">Container 'hacker' of Pod 'dangerous-pod' should set 'securityContext.allowPrivilegeEscalation' to false</div></div>
 <div class="finding low"><h3><span class="severity severity-low">LOW</span> Default capabilities: some containers do not drop all (ID: KSV003)</h3><p>The container should drop all default capabilities and add only those that are needed for its execution.</p><p>Plus d\&#39;informations: <a href="https://avd.aquasec.com/misconfig/ksv003" target="_blank">https://avd.aquasec.com/misconfig/ksv003</a></p><div class="code-block">Container 'hacker' of Pod 'dangerous-pod' should add 'ALL' to 'securityContext.capabilities.drop'</div></div>
